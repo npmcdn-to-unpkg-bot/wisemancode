@@ -1,3 +1,3 @@
 微信公众号开发
 使用beego框架
-TEST
+添加godep管理
