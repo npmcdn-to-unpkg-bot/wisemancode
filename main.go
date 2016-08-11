@@ -11,3 +11,5 @@ func main() {
 	//wechat.MainCallbacl()
 	beego.Run()
 }
+
+//logs.SetLogger("multifile", ')
