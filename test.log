@@ -18,3 +18,137 @@
 2016/08/11 17:16:50 [sign.go:49][I] 需要验证签名的数据：nonce|timestamp|wx12sscwweewwqwwqqs
 2016/08/11 17:16:50 [sign.go:32][I] 计算签名串：0513f26ab6a3cb34a50217877910ebd941ea1047
 2016/08/11 17:16:50 [WxController.go:40][I] 微信服务器验证成功
+2016/08/12 10:38:06 [WxController.go:22][I] 微信服务器进行验证
+2016/08/12 10:38:06 [WxController.go:24][I] 接受微信服务器参数：/wx?timestamp=timestamp&signature=0513f26ab6a3cb34a50217877910ebd941ea1047&nonce=nonce&echostr=echostr
+2016/08/12 10:38:06 [WxController.go:36][I] 微信服务器发来的签名串：0513f26ab6a3cb34a50217877910ebd941ea1047
+2016/08/12 10:38:06 [sign.go:49][I] 需要验证签名的数据：nonce|timestamp|wx12sscwweewwqwwqqs
+2016/08/12 10:38:06 [sign.go:32][I] 计算签名串：0513f26ab6a3cb34a50217877910ebd941ea1047
+2016/08/12 10:38:06 [WxController.go:43][I] 微信服务器验证成功
+2016/08/12 10:39:06 [WxController.go:22][I] 微信服务器进行验证
+2016/08/12 10:39:06 [WxController.go:24][I] 接受微信服务器参数：/wx?timestamp=timestamp&signature=0513f26ab6a3cb34a50217877910ebd941ea1047&nonce=nonce&echostr=echostr
+2016/08/12 10:39:06 [WxController.go:36][I] 微信服务器发来的签名串：0513f26ab6a3cb34a50217877910ebd941ea1047
+2016/08/12 10:39:06 [sign.go:49][I] 需要验证签名的数据：nonce|timestamp|wx12sscwweewwqwwqqs
+2016/08/12 10:39:06 [sign.go:32][I] 计算签名串：0513f26ab6a3cb34a50217877910ebd941ea1047
+2016/08/12 10:39:06 [WxController.go:43][I] 微信服务器验证成功
+2016/08/12 10:39:20 [WxController.go:22][I] 微信服务器进行验证
+2016/08/12 10:39:20 [WxController.go:24][I] 接受微信服务器参数：/wx?timestamp=timestamp&signature=0513f26ab6a3cb34a50217877910ebd941ea1047&nonce=nonce&echostr=echostr
+2016/08/12 10:39:20 [WxController.go:36][I] 微信服务器发来的签名串：0513f26ab6a3cb34a50217877910ebd941ea1047
+2016/08/12 10:39:20 [sign.go:49][I] 需要验证签名的数据：nonce|timestamp|wx12sscwweewwqwwqqs
+2016/08/12 10:39:20 [sign.go:32][I] 计算签名串：0513f26ab6a3cb34a50217877910ebd941ea1047
+2016/08/12 10:39:20 [WxController.go:43][I] 微信服务器验证成功
+2016/08/12 10:41:31 [WxController.go:22][I] 微信服务器进行验证
+2016/08/12 10:41:31 [WxController.go:24][I] 接受微信服务器参数：/wx?timestamp=timestamp&signature=0513f26ab6a3cb34a50217877910ebd941ea1047&nonce=nonce&echostr=echostr
+2016/08/12 10:41:31 [WxController.go:36][I] 微信服务器发来的签名串：0513f26ab6a3cb34a50217877910ebd941ea1047
+2016/08/12 10:41:31 [sign.go:49][I] 需要验证签名的数据：nonce|timestamp|wx12sscwweewwqwwqqs
+2016/08/12 10:41:31 [sign.go:32][I] 计算签名串：0513f26ab6a3cb34a50217877910ebd941ea1047
+2016/08/12 10:41:31 [WxController.go:43][I] 微信服务器验证成功
+2016/08/12 10:42:35 [WxController.go:22][I] 微信服务器进行验证
+2016/08/12 10:42:35 [WxController.go:24][I] 接受微信服务器参数：/wx?timestamp=timestamp&signature=0513f26ab6a3cb34a50217877910ebd941ea1047&nonce=nonce&echostr=echostr
+2016/08/12 10:42:35 [WxController.go:36][I] 微信服务器发来的签名串：0513f26ab6a3cb34a50217877910ebd941ea1047
+2016/08/12 10:42:35 [sign.go:49][I] 需要验证签名的数据：nonce|timestamp|wx12sscwweewwqwwqqs
+2016/08/12 10:42:35 [sign.go:32][I] 计算签名串：0513f26ab6a3cb34a50217877910ebd941ea1047
+2016/08/12 10:42:35 [WxController.go:43][I] 微信服务器验证成功
+2016/08/12 10:42:37 [WxController.go:22][I] 微信服务器进行验证
+2016/08/12 10:42:37 [WxController.go:24][I] 接受微信服务器参数：/wx?timestamp=timestamp&signature=0513f26ab6a3cb34a50217877910ebd941ea1047&nonce=nonce&echostr=echostr
+2016/08/12 10:42:37 [WxController.go:36][I] 微信服务器发来的签名串：0513f26ab6a3cb34a50217877910ebd941ea1047
+2016/08/12 10:42:37 [sign.go:49][I] 需要验证签名的数据：nonce|timestamp|wx12sscwweewwqwwqqs
+2016/08/12 10:42:37 [sign.go:32][I] 计算签名串：0513f26ab6a3cb34a50217877910ebd941ea1047
+2016/08/12 10:42:37 [WxController.go:43][I] 微信服务器验证成功
+2016/08/12 10:43:11 [WxController.go:22][I] 微信服务器进行验证
+2016/08/12 10:43:11 [WxController.go:24][I] 接受微信服务器参数：/wx?timestamp=timestamp&signature=0513f26ab6a3cb34a50217877910ebd941ea1047&nonce=nonce&echostr=echostr
+2016/08/12 10:43:11 [WxController.go:36][I] 微信服务器发来的签名串：0513f26ab6a3cb34a50217877910ebd941ea1047
+2016/08/12 10:43:11 [sign.go:49][I] 需要验证签名的数据：nonce|timestamp|wx12sscwweewwqwwqqs
+2016/08/12 10:43:11 [sign.go:32][I] 计算签名串：0513f26ab6a3cb34a50217877910ebd941ea1047
+2016/08/12 10:43:11 [WxController.go:43][I] 微信服务器验证成功
+2016/08/12 10:52:10 [WxController.go:22][I] 微信服务器进行验证
+2016/08/12 10:52:10 [WxController.go:24][I] 接受微信服务器参数：/wx?timestamp=timestamp&signature=0513f26ab6a3cb34a50217877910ebd941ea1047&nonce=nonce&echostr=echostr
+2016/08/12 10:52:10 [WxController.go:36][I] 微信服务器发来的签名串：0513f26ab6a3cb34a50217877910ebd941ea1047
+2016/08/12 10:52:10 [sign.go:49][I] 需要验证签名的数据：nonce|timestamp|wx12sscwweewwqwwqqs
+2016/08/12 10:52:10 [sign.go:32][I] 计算签名串：0513f26ab6a3cb34a50217877910ebd941ea1047
+2016/08/12 10:52:10 [WxController.go:43][I] 微信服务器验证成功
+2016/08/12 10:55:51 [WxController.go:22][I] 微信服务器进行验证
+2016/08/12 10:55:51 [WxController.go:24][I] 接受微信服务器参数：/wx?timestamp=timestamp&signature=0513f26ab6a3cb34a50217877910ebd941ea1047&nonce=nonce&echostr=echostr
+2016/08/12 10:55:51 [WxController.go:36][I] 微信服务器发来的签名串：0513f26ab6a3cb34a50217877910ebd941ea1047
+2016/08/12 10:55:51 [sign.go:49][I] 需要验证签名的数据：nonce|timestamp|wx12sscwweewwqwwqqs
+2016/08/12 10:55:51 [sign.go:32][I] 计算签名串：0513f26ab6a3cb34a50217877910ebd941ea1047
+2016/08/12 10:55:51 [WxController.go:43][I] 微信服务器验证成功
+2016/08/12 10:57:10 [WxController.go:22][I] 微信服务器进行验证
+2016/08/12 10:57:10 [WxController.go:24][I] 接受微信服务器参数：/wx?timestamp=timestamp&signature=0513f26ab6a3cb34a50217877910ebd941ea1047&nonce=nonce&echostr=echostr
+2016/08/12 10:57:10 [WxController.go:36][I] 微信服务器发来的签名串：0513f26ab6a3cb34a50217877910ebd941ea1047
+2016/08/12 10:57:10 [sign.go:49][I] 需要验证签名的数据：nonce|timestamp|wx12sscwweewwqwwqqs
+2016/08/12 10:57:10 [sign.go:32][I] 计算签名串：0513f26ab6a3cb34a50217877910ebd941ea1047
+2016/08/12 10:57:10 [WxController.go:43][I] 微信服务器验证成功
+2016/08/12 10:59:19 [WxController.go:22][I] 微信服务器进行验证
+2016/08/12 10:59:19 [WxController.go:24][I] 接受微信服务器参数：/wx?timestamp=timestamp&signature=0513f26ab6a3cb34a50217877910ebd941ea1047&nonce=nonce&echostr=echostr
+2016/08/12 10:59:19 [WxController.go:36][I] 微信服务器发来的签名串：0513f26ab6a3cb34a50217877910ebd941ea1047
+2016/08/12 10:59:19 [sign.go:49][I] 需要验证签名的数据：nonce|timestamp|wx12sscwweewwqwwqqs
+2016/08/12 10:59:19 [sign.go:32][I] 计算签名串：0513f26ab6a3cb34a50217877910ebd941ea1047
+2016/08/12 10:59:19 [WxController.go:43][I] 微信服务器验证成功
+2016/08/12 11:05:00 [WxController.go:22][I] 微信服务器进行验证
+2016/08/12 11:05:00 [WxController.go:24][I] 接受微信服务器参数：/wx?timestamp=timestamp&signature=0513f26ab6a3cb34a50217877910ebd941ea1047&nonce=nonce&echostr=echostr
+2016/08/12 11:05:00 [WxController.go:36][I] 微信服务器发来的签名串：0513f26ab6a3cb34a50217877910ebd941ea1047
+2016/08/12 11:05:00 [sign.go:49][I] 需要验证签名的数据：nonce|timestamp|wx12sscwweewwqwwqqs
+2016/08/12 11:05:00 [sign.go:32][I] 计算签名串：0513f26ab6a3cb34a50217877910ebd941ea1047
+2016/08/12 11:05:00 [WxController.go:43][I] 微信服务器验证成功
+2016/08/12 11:07:26 [WxController.go:20][I] 微信服务器进行验证
+2016/08/12 11:07:26 [WxController.go:22][I] 接受微信服务器参数：/wx?timestamp=timestamp&signature=0513f26ab6a3cb34a50217877910ebd941ea1047&nonce=nonce&echostr=echostr
+2016/08/12 11:07:26 [WxController.go:34][I] 微信服务器发来的签名串：0513f26ab6a3cb34a50217877910ebd941ea1047
+2016/08/12 11:07:26 [sign.go:49][I] 需要验证签名的数据：nonce|timestamp|wx12sscwweewwqwwqqs
+2016/08/12 11:07:26 [sign.go:32][I] 计算签名串：0513f26ab6a3cb34a50217877910ebd941ea1047
+2016/08/12 11:07:26 [WxController.go:41][I] 微信服务器验证成功
+2016/08/12 11:28:47 [WxController.go:20][I] 微信服务器进行验证
+2016/08/12 11:28:47 [WxController.go:22][I] 接受微信服务器参数：/wx?timestamp=timestamp&signature=0513f26ab6a3cb34a50217877910ebd941ea1047&nonce=nonce&echostr=echostr
+2016/08/12 11:28:47 [utils.go:37][I] key is wxconfig::token
+2016/08/12 11:28:47 [utils.go:39][I] key is wxconfig::token: value is wx12sscwweewwqwwqqs
+2016/08/12 11:28:47 [WxController.go:34][I] 微信服务器发来的签名串：0513f26ab6a3cb34a50217877910ebd941ea1047
+2016/08/12 11:28:47 [sign.go:49][I] 需要验证签名的数据：nonce|timestamp|wx12sscwweewwqwwqqs
+2016/08/12 11:28:47 [sign.go:32][I] 计算签名串：0513f26ab6a3cb34a50217877910ebd941ea1047
+2016/08/12 11:28:47 [WxController.go:41][I] 微信服务器验证成功
+2016/08/12 11:34:59 [WxController.go:20][I] 微信服务器进行验证
+2016/08/12 11:34:59 [WxController.go:22][I] 接受微信服务器参数：/wx?timestamp=timestamp&signature=0513f26ab6a3cb34a50217877910ebd941ea1047&nonce=nonce&echostr=echostr
+2016/08/12 11:34:59 [utils.go:37][I] key is wxconfig::token
+2016/08/12 11:34:59 [utils.go:39][I] key is wxconfig::token&& value is wx12sscwweewwqwwqqs
+2016/08/12 11:34:59 [WxController.go:34][I] 微信服务器发来的签名串：0513f26ab6a3cb34a50217877910ebd941ea1047
+2016/08/12 11:34:59 [sign.go:49][I] 需要验证签名的数据：nonce|timestamp|wx12sscwweewwqwwqqs
+2016/08/12 11:34:59 [sign.go:32][I] 计算签名串：0513f26ab6a3cb34a50217877910ebd941ea1047
+2016/08/12 11:34:59 [WxController.go:41][I] 微信服务器验证成功
+2016/08/12 11:43:38 [WxController.go:20][I] 微信服务器进行验证
+2016/08/12 11:43:38 [WxController.go:22][I] 接受微信服务器参数：/wx?timestamp=timestamp&signature=0513f26ab6a3cb34a50217877910ebd941ea1047&nonce=nonce&echostr=echostr
+2016/08/12 11:43:38 [utils.go:37][I] key is wxconfig::token
+2016/08/12 11:43:38 [utils.go:39][I] key is wxconfig::token||value is wx12sscwweewwqwwqqs
+2016/08/12 11:43:38 [WxController.go:34][I] 微信服务器发来的签名串：0513f26ab6a3cb34a50217877910ebd941ea1047
+2016/08/12 11:43:38 [sign.go:49][I] 需要验证签名的数据：nonce|timestamp|wx12sscwweewwqwwqqs
+2016/08/12 11:43:38 [sign.go:32][I] 计算签名串：0513f26ab6a3cb34a50217877910ebd941ea1047
+2016/08/12 11:43:38 [WxController.go:41][I] 微信服务器验证成功
+2016/08/12 12:33:16 [WxController.go:20][I] 微信服务器进行验证
+2016/08/12 12:33:16 [WxController.go:22][I] 接受微信服务器参数：/wx?timestamp=timestamp&signature=0513f26ab6a3cb34a50217877910ebd941ea1047&nonce=nonce&echostr=echostr
+2016/08/12 12:33:16 [utils.go:39][I] key is wxconfig::token
+2016/08/12 12:33:16 [utils.go:41][I] key is wxconfig::token||value is 
+2016/08/12 12:33:16 [WxController.go:31][E] Config is fund token
+2016/08/12 12:33:29 [WxController.go:20][I] 微信服务器进行验证
+2016/08/12 12:33:29 [WxController.go:22][I] 接受微信服务器参数：/wx?timestamp=timestamp&signature=0513f26ab6a3cb34a50217877910ebd941ea1047&nonce=nonce&echostr=echostr
+2016/08/12 12:33:29 [utils.go:39][I] key is wxconfig::token
+2016/08/12 12:33:29 [utils.go:41][I] key is wxconfig::token||value is 
+2016/08/12 12:33:29 [WxController.go:31][E] Config is fund token
+2016/08/12 12:33:32 [WxController.go:20][I] 微信服务器进行验证
+2016/08/12 12:33:32 [WxController.go:22][I] 接受微信服务器参数：/wx?timestamp=timestamp&signature=0513f26ab6a3cb34a50217877910ebd941ea1047&nonce=nonce&echostr=echostr
+2016/08/12 12:33:32 [utils.go:39][I] key is wxconfig::token
+2016/08/12 12:33:32 [utils.go:41][I] key is wxconfig::token||value is 
+2016/08/12 12:33:32 [WxController.go:31][E] Config is fund token
+2016/08/12 12:33:32 [WxController.go:20][I] 微信服务器进行验证
+2016/08/12 12:33:32 [WxController.go:22][I] 接受微信服务器参数：/wx?timestamp=timestamp&signature=0513f26ab6a3cb34a50217877910ebd941ea1047&nonce=nonce&echostr=echostr
+2016/08/12 12:33:32 [utils.go:39][I] key is wxconfig::token
+2016/08/12 12:33:32 [utils.go:41][I] key is wxconfig::token||value is 
+2016/08/12 12:33:32 [WxController.go:31][E] Config is fund token
+2016/08/12 12:33:33 [WxController.go:20][I] 微信服务器进行验证
+2016/08/12 12:33:33 [WxController.go:22][I] 接受微信服务器参数：/wx?timestamp=timestamp&signature=0513f26ab6a3cb34a50217877910ebd941ea1047&nonce=nonce&echostr=echostr
+2016/08/12 12:33:33 [utils.go:39][I] key is wxconfig::token
+2016/08/12 12:33:33 [utils.go:41][I] key is wxconfig::token||value is 
+2016/08/12 12:33:33 [WxController.go:31][E] Config is fund token
+2016/08/12 12:36:23 [WxController.go:20][I] 微信服务器进行验证
+2016/08/12 12:36:23 [WxController.go:22][I] 接受微信服务器参数：/wx?timestamp=timestamp&signature=0513f26ab6a3cb34a50217877910ebd941ea1047&nonce=nonce&echostr=echostr
+2016/08/12 12:36:23 [utils.go:48][I] key is token||value is wx12sscwweewwqwwqqs
+2016/08/12 12:36:23 [WxController.go:34][I] 微信服务器发来的签名串：0513f26ab6a3cb34a50217877910ebd941ea1047
+2016/08/12 12:36:23 [sign.go:49][I] 需要验证签名的数据：nonce|timestamp|wx12sscwweewwqwwqqs
+2016/08/12 12:36:23 [sign.go:32][I] 计算签名串：0513f26ab6a3cb34a50217877910ebd941ea1047
+2016/08/12 12:36:23 [WxController.go:41][I] 微信服务器验证成功

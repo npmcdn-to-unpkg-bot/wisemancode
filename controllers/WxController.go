@@ -1,6 +1,7 @@
 package controllers
 
 import (
+
 	//"io/ioutil"
 
 	"wisemancode/log"
@@ -25,7 +26,7 @@ func (wxCon *WXController) Get() {
 	echostr := wxCon.GetString("echostr")
 	wxCon.TplName = "index.tpl"
 	//获取配置数据
-	token := beego.AppConfig.String("wxconfig::token")
+	token := utils.GetWxConfig("token")
 	if len(token) == 0 {
 		log.Logger.Error("Config is fund token")
 		return
