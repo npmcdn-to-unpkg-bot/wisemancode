@@ -5,11 +5,7 @@ import (
 	"wisemancode/utils"
 )
 
-<<<<<<< HEAD
 //AccessToken 微信校验串
-=======
-//AccessToken
->>>>>>> f880d1c0dc0a089e9ca24c71d097b41f4e351c16
 type AccessToken struct {
 	AccessTokenStr string //ACCESS_TOKEN 字符串
 	StartTime      string //获取时间
@@ -17,10 +13,7 @@ type AccessToken struct {
 	LiveTime       int    //存活时间 秒
 }
 
-<<<<<<< HEAD
 //AcessTokenURL 获取维系字符串URL
-=======
->>>>>>> f880d1c0dc0a089e9ca24c71d097b41f4e351c16
 type AcessTokenURL struct {
 	url            string
 	aPPID          string
@@ -34,16 +27,14 @@ var (
 )
 
 func init() {
-<<<<<<< HEAD
 	accessToken = newAccessTokenURL()
 }
 func newAccessTokenURL() (urlToken *AcessTokenURL) {
 	log.Logger.Info("生产实例")
-=======
-	accessToken = newAcessTokenURL()
+	urlToken = newAcessTokenURL()
+	return
 }
 func newAcessTokenURL() (urlToken *AcessTokenURL) {
->>>>>>> f880d1c0dc0a089e9ca24c71d097b41f4e351c16
 	url := utils.GetWxConfig("access_token_url")
 	appid := utils.GetWxConfig("appID")
 	appsecret := utils.GetWxConfig("appsecret")
