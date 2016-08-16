@@ -1,6 +1,8 @@
 package syncAccessToken
 
 import (
+	"encoding/json"
+	"strings"
 	"sync/atomic"
 	"time"
 	"unsafe"
@@ -9,23 +11,6 @@ import (
 
 	"github.com/astaxie/beego/httplib"
 )
-
-//AccessTokenServer 定时获取微信校验服务
-type AccessTokenServer struct {
-	AccessTokenStr       chan string       //ACCESS_TOKEN 字符串 解析后的信息
-	accessTokenResultStr chan accessResult //微信返回信息后解析结果
-	StartTime            string            //获取时间
-	EndTime              string            //失效时间
-	LiveTime             int               //存活时间 秒
-	Times                time.Duration     //时间间隔
-
-	tokenCache unsafe.Pointer //微信返回的信息指针
-
-}
-type accessResult struct {
-	accessTokenStrNew string
-	err               string
-}
 
 //AcessTokenURL 获取维系字符串URL
 type AcessTokenURL struct {
@@ -41,11 +26,11 @@ const (
 )
 
 var (
-	accessToken *AcessTokenURL
+	tokenURL *AcessTokenURL
 )
 
 func init() {
-	accessToken = newAccessTokenURL()
+	tokenURL = newAccessTokenURL()
 }
 func newAccessTokenURL() (urlToken *AcessTokenURL) {
 	log.Logger.Info("生产实例")
@@ -60,44 +45,66 @@ func newAcessTokenURL() (urlToken *AcessTokenURL) {
 	accessTokenURL := url + "?grant_type=" + grantType + "&&appid=" + appid + "&secret=" + appsecret
 	return &AcessTokenURL{url: url, aPPID: appid, appsecret: appsecret, grantType: grantType, accessTokenURL: accessTokenURL}
 }
-func NewAccessTokenServer() (accessTokenServer *AccessTokenServer) {
-	accessTokenStr := make(chan string)
-	access := make(chan accessResult)
-	accessTokenServer = &AccessTokenServer{AccessTokenStr: accessTokenStr, accessTokenResultStr: access, Times: times}
-	go accessTokenServer.GetAccessTokenByTime(accessToken)
-	return
+
+//accessResult解析获取的结果
+type accessResult struct {
+	accessTokenStrNew string
+	err               string
 }
 
-//GetAccessTokenByTime 启动定时器进行获取微信accessToken
-func (this *AccessTokenServer) GetAccessTokenByTime(url *AcessTokenURL) {
-	//启动定时器到微信服务器中进行获取accessToken
-	//	currentAccessToken := this.AccessTokenStr
-	//if()
-	//accessToken, error := httplib.Get(url.accessTokenURL).String()
-	//	if error == nil {
-	//		//错误处理
-	//		return
-	//	}
-
+//AccessTokenServer 定时获取微信校验服务
+type AccessTokenServer struct {
+	AccessTokenStr       chan string       //ACCESS_TOKEN 字符串 解析后的信息
+	accessTokenResultStr chan accessResult //微信返回信息后解析结果
+	LiveTime             int               //存活时间 秒
+	Times                time.Duration     //时间间隔
+	json                 unsafe.Pointer    //微信返回的数据结构指针
 }
 
-type accessTokenJson struct {
+//AccessTokenJson 从微信获取accessToken数据
+type AccessTokenJson struct {
 	Token     string `json:"access_token"`
 	ExpiresIn int64  `json:"expires_in"`
 }
 
-//获取新的token 放到缓存中 别且返回 新的token
-func (this *AccessTokenServer) GetNewAccessTokenFromWeiXin(url *AcessTokenURL, currentAccess string) (token *accessTokenJson, err error) {
-	if p := (*accessTokenJson)(atomic.LoadPointer(&this.tokenCache)); p != nil && currentAccess != p.Token {
-		return p, nil
+func NewDefaultAccessTokenServer() (acc *AccessTokenServer) {
+	acc = &AccessTokenServer{
+		AccessTokenStr:       make(chan string),
+		accessTokenResultStr: make(chan accessResult),
+		Times:                times,
 	}
-	data, err := httplib.Get(url.accessTokenURL).String()
-	log.Logger.Info("获取微信信息：data=：" + data)
-	log.Logger.Info("获取微信信息：err=：", err.Error())
-	if err != nil {
-		//处理错误信息
-		atomic.StorePointer(&this.tokenCache, nil)
-		return
-	}
+	go acc.GetAndAccessTokenServer()
 	return
+}
+
+//获取并且更新微信accessToken
+func (this *AccessTokenServer) GetAndAccessTokenServer() {
+	//创建一个定时器
+	nicker := time.NewTicker(this.Times)
+	for {
+		select {
+		case current := <-this.AccessTokenStr:
+			//数据进行更新
+			this.updateAccessToken(current)
+		}
+	}
+}
+func (this *AccessTokenServer) updateAccessToken(current string) (jsonToken *AccessTokenJson, err error) {
+	if len(current) != 0 {
+		if p := (*AccessTokenJson)(atomic.LoadPointer(&this.json)); p != nil && current != p.Token {
+			return p, nil
+		}
+		msg, err := httplib.Get(tokenURL.accessTokenURL).String()
+		if err != nil {
+			atomic.StorePointer(&this.json, nil)
+			return nil, err
+		}
+		var j AccessTokenJson
+		js := json.NewDecoder(strings.NewReader(msg))
+		if e = js.Decode(&j); e != nil {
+			atomic.StorePointer(&this.json, nil)
+			return nil, err
+		}
+
+	}
 }
