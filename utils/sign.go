@@ -4,6 +4,8 @@ import (
 	"crypto/sha1"
 	"encoding/hex"
 	"errors"
+	"fmt"
+	"io"
 	"sort"
 	"strings"
 	"wisemancode/log"
@@ -26,8 +28,13 @@ func Sign(token, timestamp, nonce string) (signature string, err error) {
 	}
 	strs := []string{token, timestamp, nonce}
 
-	var buf []byte = StringUnionSort(strs)
-	hashsum := sha1.Sum(buf)
+	//var buf []byte = StringUnionSort(strs)
+	s := sha1.New()
+	io.WriteString(s, StringUnionSortToStr(strs))
+	log.Logger.Info(fmt.Sprintf("%x", s.Sum(nil)))
+	hashsum := s.Sum(nil)
+	//hashsum := sha1.Sum(buf)
+	//log.Logger.Info(fmt.Sprintf("%x", hashsum))
 	signature = hex.EncodeToString(hashsum[:])
 	log.Logger.Info("计算签名串：" + signature)
 	return signature, nil
@@ -48,7 +55,19 @@ func StringUnionSort(s []string) []byte {
 	sort.Strings(s)
 	log.Logger.Info("需要验证签名的数据：" + strings.Join(s, "|"))
 	var str string = strings.Join(s[:], "")
+	log.Logger.Info("需要签名str:" + str)
 	buf := make([]byte, len(str))
 	buf = append(buf, str...)
 	return buf
+}
+func StringUnionSortToStr(s []string) string {
+	if len(s) == 0 {
+		log.Logger.Error("验证签名字典排序错误，排序字符串nil")
+		return ""
+	}
+
+	sort.Strings(s)
+	log.Logger.Info("需要验证签名的数据：" + strings.Join(s, "|"))
+	var str string = strings.Join(s[:], "")
+	return str
 }
