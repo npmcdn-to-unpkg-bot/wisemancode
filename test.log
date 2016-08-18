@@ -2444,3 +2444,219 @@
 2016/08/18 18:24:03 [access_token_server.go:100][I] GetAndAccessTokenServer,for 循环
 2016/08/18 18:24:03 [access_token_server.go:199][I] 获取accessToken RefreshToken()  {accessTokenStrNew:DykABYOJ6HpXB9lRr3jhUQFHO_aAujyxq_6rQl20D7NXtFPskElC7vAdpLDGgsKAFTcnZyPfKi1LMuJR1Y_izXLPeboJ6e8PXRqU2DFE_fV0L3oRV5dEQAS89eS5tzIJYGHjABASAB err:<nil>}
 2016/08/18 18:24:03 [access_token_server.go:190][I] 获取accessToken Token()  DykABYOJ6HpXB9lRr3jhUQFHO_aAujyxq_6rQl20D7NXtFPskElC7vAdpLDGgsKAFTcnZyPfKi1LMuJR1Y_izXLPeboJ6e8PXRqU2DFE_fV0L3oRV5dEQAS89eS5tzIJYGHjABASAB
+2016/08/18 18:29:03 [access_token_server.go:40][I] 获取accessToken的配置
+2016/08/18 18:29:03 [access_token_server.go:45][I] 获取accessToken的配置==============start===================
+2016/08/18 18:29:03 [utils.go:48][I] key is access_token_url||value is https://api.weixin.qq.com/cgi-bin/token
+2016/08/18 18:29:03 [utils.go:48][I] key is appID||value is wx1dc762cdfeb4ed66
+2016/08/18 18:29:03 [utils.go:48][I] key is appsecret||value is a72c8ccb896f3f7ddaf45f5318035bde
+2016/08/18 18:29:03 [utils.go:48][I] key is grant_type||value is client_credential
+2016/08/18 18:29:03 [access_token_server.go:47][I] accessToken 配置文件信息：&{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/18 18:29:03 [access_token_server.go:48][I] 获取accessToken的配置==============end===================
+2016/08/18 18:29:03 [access_token_server.go:42][I] 获取accessToken的配置 &{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/18 18:29:12 [WxController.go:51][I] 接受微信服务器参数：/test
+2016/08/18 18:29:12 [WxController.go:52][I] test 数据
+2016/08/18 18:29:12 [access_token_server.go:87][I] accessToken 获取，数据结构初始化：&{CurrentAccessToken:0xc04233e300 accessTokenResult:0xc04233e360 LiveTime:0 Times:2s json:<nil>}
+2016/08/18 18:29:12 [access_token_server.go:88][I] accessToken 启动定时器，进行请求accessToken
+2016/08/18 18:29:12 [WxController.go:55][I] test 数据===================== &{CurrentAccessToken:0xc04233e300 accessTokenResult:0xc04233e360 LiveTime:0 Times:2s json:<nil>}
+2016/08/18 18:29:12 [access_token_server.go:184][I] 获取accessToken Token()
+2016/08/18 18:29:12 [access_token_server.go:196][I] 获取accessToken RefreshToken()  
+2016/08/18 18:29:12 [access_token_server.go:96][I] GetAndAccessTokenServer创建定时器，进行请求accessToken
+2016/08/18 18:29:12 [access_token_server.go:100][I] GetAndAccessTokenServer,for 循环
+2016/08/18 18:29:12 [access_token_server.go:104][I] 当前CurrentAccessToken:
+2016/08/18 18:29:12 [access_token_server.go:145][I] 链接微信服务器获取accessToken
+2016/08/18 18:29:12 [access_token_server.go:153][I] 与微信服务器建立链接
+2016/08/18 18:29:12 [access_token_server.go:155][I] 获取微信服务器数据：{"access_token":"Gn_SuKgvmW3AT1hRXkx1LNiLCKat7x7k7Ju3Pa4Kwx0Ah5Go0Rvb8BBg9BaDi0JrfkdJmtEYPs7etMSd3wFRS_ygC2NVGWCzAbuh8Im_z-zN2ltV99_ShD_f7kYQQGULBAEfAGAQPT","expires_in":7200}
+2016/08/18 18:29:12 [access_token_server.go:163][I] 获取微信服务器数据,r   &{s:{"access_token":"Gn_SuKgvmW3AT1hRXkx1LNiLCKat7x7k7Ju3Pa4Kwx0Ah5Go0Rvb8BBg9BaDi0JrfkdJmtEYPs7etMSd3wFRS_ygC2NVGWCzAbuh8Im_z-zN2ltV99_ShD_f7kYQQGULBAEfAGAQPT","expires_in":7200} i:0 prevRune:-1}
+2016/08/18 18:29:12 [access_token_server.go:165][I] 获取微信服务器数据,dec   &{r:0xc0423b80c0 buf:[] d:{data:[] off:0 scan:{step:<nil> endTop:false parseState:[] err:<nil> redo:false redoCode:0 redoState:<nil> bytes:0} nextscan:{step:<nil> endTop:false parseState:[] err:<nil> redo:false redoCode:0 redoState:<nil> bytes:0} savedError:<nil> useNumber:false} scanp:0 scan:{step:<nil> endTop:false parseState:[] err:<nil> redo:false redoCode:0 redoState:<nil> bytes:0} err:<nil> tokenState:0 tokenStack:[]}
+2016/08/18 18:29:12 [access_token_server.go:169][I] 获取微信服务器数据,解析数据：{Token:Gn_SuKgvmW3AT1hRXkx1LNiLCKat7x7k7Ju3Pa4Kwx0Ah5Go0Rvb8BBg9BaDi0JrfkdJmtEYPs7etMSd3wFRS_ygC2NVGWCzAbuh8Im_z-zN2ltV99_ShD_f7kYQQGULBAEfAGAQPT ExpiresIn:7200}
+2016/08/18 18:29:12 [access_token_server.go:106][I] 已经请求微信服务器获取accessToken:&{Token:Gn_SuKgvmW3AT1hRXkx1LNiLCKat7x7k7Ju3Pa4Kwx0Ah5Go0Rvb8BBg9BaDi0JrfkdJmtEYPs7etMSd3wFRS_ygC2NVGWCzAbuh8Im_z-zN2ltV99_ShD_f7kYQQGULBAEfAGAQPT ExpiresIn:7200}
+2016/08/18 18:29:12 [access_token_server.go:114][I] 获取微信accessToken &{CurrentAccessToken:0xc04233e300 accessTokenResult:0xc04233e360 LiveTime:0 Times:2s json:0xc0423b80a0}
+2016/08/18 18:29:12 [access_token_server.go:100][I] GetAndAccessTokenServer,for 循环
+2016/08/18 18:29:12 [access_token_server.go:199][I] 获取accessToken RefreshToken()  {accessTokenStrNew:Gn_SuKgvmW3AT1hRXkx1LNiLCKat7x7k7Ju3Pa4Kwx0Ah5Go0Rvb8BBg9BaDi0JrfkdJmtEYPs7etMSd3wFRS_ygC2NVGWCzAbuh8Im_z-zN2ltV99_ShD_f7kYQQGULBAEfAGAQPT err:<nil>}
+2016/08/18 18:29:12 [access_token_server.go:190][I] 获取accessToken Token()  Gn_SuKgvmW3AT1hRXkx1LNiLCKat7x7k7Ju3Pa4Kwx0Ah5Go0Rvb8BBg9BaDi0JrfkdJmtEYPs7etMSd3wFRS_ygC2NVGWCzAbuh8Im_z-zN2ltV99_ShD_f7kYQQGULBAEfAGAQPT
+2016/08/18 18:29:14 [access_token_server.go:116][I] 获取微信accessToken 启动定时器时间nicker.C 0xc04236c060
+2016/08/18 18:29:14 [access_token_server.go:145][I] 链接微信服务器获取accessToken
+2016/08/18 18:29:14 [access_token_server.go:153][I] 与微信服务器建立链接
+2016/08/18 18:29:14 [access_token_server.go:155][I] 获取微信服务器数据：{"access_token":"Gn_SuKgvmW3AT1hRXkx1LNiLCKat7x7k7Ju3Pa4Kwx0mGTHk6JcbjkkbJLCHIzL3mYCGElYGr_lR3APJ7gKYd-AsKQvA5aV0yvL3ly_EZFmzTW4TLy6MiX3PByTpF097JYSfAGATIC","expires_in":7199}
+2016/08/18 18:29:14 [access_token_server.go:163][I] 获取微信服务器数据,r   &{s:{"access_token":"Gn_SuKgvmW3AT1hRXkx1LNiLCKat7x7k7Ju3Pa4Kwx0mGTHk6JcbjkkbJLCHIzL3mYCGElYGr_lR3APJ7gKYd-AsKQvA5aV0yvL3ly_EZFmzTW4TLy6MiX3PByTpF097JYSfAGATIC","expires_in":7199} i:0 prevRune:-1}
+2016/08/18 18:29:14 [access_token_server.go:165][I] 获取微信服务器数据,dec   &{r:0xc042254100 buf:[] d:{data:[] off:0 scan:{step:<nil> endTop:false parseState:[] err:<nil> redo:false redoCode:0 redoState:<nil> bytes:0} nextscan:{step:<nil> endTop:false parseState:[] err:<nil> redo:false redoCode:0 redoState:<nil> bytes:0} savedError:<nil> useNumber:false} scanp:0 scan:{step:<nil> endTop:false parseState:[] err:<nil> redo:false redoCode:0 redoState:<nil> bytes:0} err:<nil> tokenState:0 tokenStack:[]}
+2016/08/18 18:29:14 [access_token_server.go:169][I] 获取微信服务器数据,解析数据：{Token:Gn_SuKgvmW3AT1hRXkx1LNiLCKat7x7k7Ju3Pa4Kwx0mGTHk6JcbjkkbJLCHIzL3mYCGElYGr_lR3APJ7gKYd-AsKQvA5aV0yvL3ly_EZFmzTW4TLy6MiX3PByTpF097JYSfAGATIC ExpiresIn:7199}
+2016/08/18 18:29:14 [access_token_server.go:118][I] 获取微信accessToken 定时器获取数据 错误nicker.C <nil>
+2016/08/18 18:29:14 [access_token_server.go:119][I] 获取微信accessToken 定时器获取数据nicker.C &{Token:Gn_SuKgvmW3AT1hRXkx1LNiLCKat7x7k7Ju3Pa4Kwx0mGTHk6JcbjkkbJLCHIzL3mYCGElYGr_lR3APJ7gKYd-AsKQvA5aV0yvL3ly_EZFmzTW4TLy6MiX3PByTpF097JYSfAGATIC ExpiresIn:7199}
+2016/08/18 18:29:14 [access_token_server.go:126][I] 获取数据时间 ExpiresIn  7199
+2016/08/18 18:29:14 [access_token_server.go:127][I] 获取数据时，标准时间差  -7197000000000
+2016/08/18 18:29:14 [access_token_server.go:129][I] 获取数据时间太长7199
+2016/08/18 18:29:14 [access_token_server.go:130][I] 获取数据时间太长,重新启动定时器
+2016/08/18 18:29:14 [access_token_server.go:100][I] GetAndAccessTokenServer,for 循环
+2016/08/18 18:29:52 [access_token_server.go:40][I] 获取accessToken的配置
+2016/08/18 18:29:52 [access_token_server.go:45][I] 获取accessToken的配置==============start===================
+2016/08/18 18:29:52 [utils.go:48][I] key is access_token_url||value is https://api.weixin.qq.com/cgi-bin/token
+2016/08/18 18:29:52 [utils.go:48][I] key is appID||value is wx1dc762cdfeb4ed66
+2016/08/18 18:29:52 [utils.go:48][I] key is appsecret||value is a72c8ccb896f3f7ddaf45f5318035bde
+2016/08/18 18:29:52 [utils.go:48][I] key is grant_type||value is client_credential
+2016/08/18 18:29:52 [access_token_server.go:47][I] accessToken 配置文件信息：&{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/18 18:29:52 [access_token_server.go:48][I] 获取accessToken的配置==============end===================
+2016/08/18 18:29:52 [access_token_server.go:42][I] 获取accessToken的配置 &{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/18 18:29:59 [WxController.go:51][I] 接受微信服务器参数：/test
+2016/08/18 18:29:59 [WxController.go:52][I] test 数据
+2016/08/18 18:29:59 [access_token_server.go:87][I] accessToken 获取，数据结构初始化：&{CurrentAccessToken:0xc04227ed80 accessTokenResult:0xc04227ede0 LiveTime:0 Times:2s json:<nil>}
+2016/08/18 18:29:59 [access_token_server.go:88][I] accessToken 启动定时器，进行请求accessToken
+2016/08/18 18:29:59 [WxController.go:55][I] test 数据===================== &{CurrentAccessToken:0xc04227ed80 accessTokenResult:0xc04227ede0 LiveTime:0 Times:2s json:<nil>}
+2016/08/18 18:29:59 [access_token_server.go:184][I] 获取accessToken Token()
+2016/08/18 18:29:59 [access_token_server.go:196][I] 获取accessToken RefreshToken()  
+2016/08/18 18:29:59 [access_token_server.go:96][I] GetAndAccessTokenServer创建定时器，进行请求accessToken
+2016/08/18 18:29:59 [access_token_server.go:100][I] GetAndAccessTokenServer,for 循环
+2016/08/18 18:29:59 [access_token_server.go:104][I] 当前CurrentAccessToken:
+2016/08/18 18:29:59 [access_token_server.go:145][I] 链接微信服务器获取accessToken
+2016/08/18 18:29:59 [access_token_server.go:153][I] 与微信服务器建立链接
+2016/08/18 18:29:59 [access_token_server.go:155][I] 获取微信服务器数据：{"access_token":"KnORswOxzGEEecG3172HFie6XdkD74aB-py_jWkZRxUbPsseY9UPrl58XNAFPZV9T7Kdn181sTlRcMq2y9B6D4QZ3oXXqpDGgtEiReSR1ok4PTIDJPEdnByX_OH2I7tWRUVjAFAUXY","expires_in":7200}
+2016/08/18 18:29:59 [access_token_server.go:163][I] 获取微信服务器数据,r   &{s:{"access_token":"KnORswOxzGEEecG3172HFie6XdkD74aB-py_jWkZRxUbPsseY9UPrl58XNAFPZV9T7Kdn181sTlRcMq2y9B6D4QZ3oXXqpDGgtEiReSR1ok4PTIDJPEdnByX_OH2I7tWRUVjAFAUXY","expires_in":7200} i:0 prevRune:-1}
+2016/08/18 18:29:59 [access_token_server.go:165][I] 获取微信服务器数据,dec   &{r:0xc042370120 buf:[] d:{data:[] off:0 scan:{step:<nil> endTop:false parseState:[] err:<nil> redo:false redoCode:0 redoState:<nil> bytes:0} nextscan:{step:<nil> endTop:false parseState:[] err:<nil> redo:false redoCode:0 redoState:<nil> bytes:0} savedError:<nil> useNumber:false} scanp:0 scan:{step:<nil> endTop:false parseState:[] err:<nil> redo:false redoCode:0 redoState:<nil> bytes:0} err:<nil> tokenState:0 tokenStack:[]}
+2016/08/18 18:29:59 [access_token_server.go:169][I] 获取微信服务器数据,解析数据：{Token:KnORswOxzGEEecG3172HFie6XdkD74aB-py_jWkZRxUbPsseY9UPrl58XNAFPZV9T7Kdn181sTlRcMq2y9B6D4QZ3oXXqpDGgtEiReSR1ok4PTIDJPEdnByX_OH2I7tWRUVjAFAUXY ExpiresIn:7200}
+2016/08/18 18:29:59 [access_token_server.go:106][I] 已经请求微信服务器获取accessToken:&{Token:KnORswOxzGEEecG3172HFie6XdkD74aB-py_jWkZRxUbPsseY9UPrl58XNAFPZV9T7Kdn181sTlRcMq2y9B6D4QZ3oXXqpDGgtEiReSR1ok4PTIDJPEdnByX_OH2I7tWRUVjAFAUXY ExpiresIn:7200}
+2016/08/18 18:29:59 [access_token_server.go:114][I] 获取微信accessToken &{CurrentAccessToken:0xc04227ed80 accessTokenResult:0xc04227ede0 LiveTime:0 Times:2s json:0xc042370100}
+2016/08/18 18:29:59 [access_token_server.go:100][I] GetAndAccessTokenServer,for 循环
+2016/08/18 18:29:59 [access_token_server.go:199][I] 获取accessToken RefreshToken()  {accessTokenStrNew:KnORswOxzGEEecG3172HFie6XdkD74aB-py_jWkZRxUbPsseY9UPrl58XNAFPZV9T7Kdn181sTlRcMq2y9B6D4QZ3oXXqpDGgtEiReSR1ok4PTIDJPEdnByX_OH2I7tWRUVjAFAUXY err:<nil>}
+2016/08/18 18:29:59 [access_token_server.go:190][I] 获取accessToken Token()  KnORswOxzGEEecG3172HFie6XdkD74aB-py_jWkZRxUbPsseY9UPrl58XNAFPZV9T7Kdn181sTlRcMq2y9B6D4QZ3oXXqpDGgtEiReSR1ok4PTIDJPEdnByX_OH2I7tWRUVjAFAUXY
+2016/08/18 18:30:01 [access_token_server.go:116][I] 获取微信accessToken 启动定时器时间nicker.C 0xc04227f020
+2016/08/18 18:30:01 [access_token_server.go:145][I] 链接微信服务器获取accessToken
+2016/08/18 18:30:01 [access_token_server.go:153][I] 与微信服务器建立链接
+2016/08/18 18:30:01 [access_token_server.go:155][I] 获取微信服务器数据：{"access_token":"KnORswOxzGEEecG3172HFie6XdkD74aB-py_jWkZRxW3HWNwurHyofLTSYWlkHB6aG5o7X2kztldf2-tq5PA6KkHsz024kg-sl-XHNB8CMFjDwBFChPVVd65xMS3aKYtIBDjAFABUW","expires_in":7198}
+2016/08/18 18:30:01 [access_token_server.go:163][I] 获取微信服务器数据,r   &{s:{"access_token":"KnORswOxzGEEecG3172HFie6XdkD74aB-py_jWkZRxW3HWNwurHyofLTSYWlkHB6aG5o7X2kztldf2-tq5PA6KkHsz024kg-sl-XHNB8CMFjDwBFChPVVd65xMS3aKYtIBDjAFABUW","expires_in":7198} i:0 prevRune:-1}
+2016/08/18 18:30:01 [access_token_server.go:165][I] 获取微信服务器数据,dec   &{r:0xc04226e080 buf:[] d:{data:[] off:0 scan:{step:<nil> endTop:false parseState:[] err:<nil> redo:false redoCode:0 redoState:<nil> bytes:0} nextscan:{step:<nil> endTop:false parseState:[] err:<nil> redo:false redoCode:0 redoState:<nil> bytes:0} savedError:<nil> useNumber:false} scanp:0 scan:{step:<nil> endTop:false parseState:[] err:<nil> redo:false redoCode:0 redoState:<nil> bytes:0} err:<nil> tokenState:0 tokenStack:[]}
+2016/08/18 18:30:01 [access_token_server.go:169][I] 获取微信服务器数据,解析数据：{Token:KnORswOxzGEEecG3172HFie6XdkD74aB-py_jWkZRxW3HWNwurHyofLTSYWlkHB6aG5o7X2kztldf2-tq5PA6KkHsz024kg-sl-XHNB8CMFjDwBFChPVVd65xMS3aKYtIBDjAFABUW ExpiresIn:7198}
+2016/08/18 18:30:01 [access_token_server.go:118][I] 获取微信accessToken 定时器获取数据 错误nicker.C <nil>
+2016/08/18 18:30:01 [access_token_server.go:119][I] 获取微信accessToken 定时器获取数据nicker.C &{Token:KnORswOxzGEEecG3172HFie6XdkD74aB-py_jWkZRxW3HWNwurHyofLTSYWlkHB6aG5o7X2kztldf2-tq5PA6KkHsz024kg-sl-XHNB8CMFjDwBFChPVVd65xMS3aKYtIBDjAFABUW ExpiresIn:7198}
+2016/08/18 18:30:01 [access_token_server.go:126][I] 获取数据时间 ExpiresIn  7198
+2016/08/18 18:30:01 [access_token_server.go:127][I] 获取数据时，标准时间差  -7196000000000
+2016/08/18 18:30:01 [access_token_server.go:129][I] 获取数据时间太长7198
+2016/08/18 18:30:01 [access_token_server.go:130][I] 获取数据时间太长,重新启动定时器
+2016/08/18 18:30:01 [access_token_server.go:100][I] GetAndAccessTokenServer,for 循环
+2016/08/18 18:30:03 [access_token_server.go:116][I] 获取微信accessToken 启动定时器时间nicker.C 0xc0423862a0
+2016/08/18 18:30:03 [access_token_server.go:145][I] 链接微信服务器获取accessToken
+2016/08/18 18:30:03 [access_token_server.go:153][I] 与微信服务器建立链接
+2016/08/18 18:30:03 [access_token_server.go:155][I] 获取微信服务器数据：{"access_token":"KnORswOxzGEEecG3172HFie6XdkD74aB-py_jWkZRxUaop8HT5iTvmefdmhAgkjXEtbdyFd5j2x0dCldQR9NjdXkKF371cvuZ0MAbMawDIrTKj1ZyEC3RkVccjt2Bew5TRMjAFAXVQ","expires_in":7196}
+2016/08/18 18:30:03 [access_token_server.go:163][I] 获取微信服务器数据,r   &{s:{"access_token":"KnORswOxzGEEecG3172HFie6XdkD74aB-py_jWkZRxUaop8HT5iTvmefdmhAgkjXEtbdyFd5j2x0dCldQR9NjdXkKF371cvuZ0MAbMawDIrTKj1ZyEC3RkVccjt2Bew5TRMjAFAXVQ","expires_in":7196} i:0 prevRune:-1}
+2016/08/18 18:30:03 [access_token_server.go:165][I] 获取微信服务器数据,dec   &{r:0xc042279b40 buf:[] d:{data:[] off:0 scan:{step:<nil> endTop:false parseState:[] err:<nil> redo:false redoCode:0 redoState:<nil> bytes:0} nextscan:{step:<nil> endTop:false parseState:[] err:<nil> redo:false redoCode:0 redoState:<nil> bytes:0} savedError:<nil> useNumber:false} scanp:0 scan:{step:<nil> endTop:false parseState:[] err:<nil> redo:false redoCode:0 redoState:<nil> bytes:0} err:<nil> tokenState:0 tokenStack:[]}
+2016/08/18 18:30:03 [access_token_server.go:169][I] 获取微信服务器数据,解析数据：{Token:KnORswOxzGEEecG3172HFie6XdkD74aB-py_jWkZRxUaop8HT5iTvmefdmhAgkjXEtbdyFd5j2x0dCldQR9NjdXkKF371cvuZ0MAbMawDIrTKj1ZyEC3RkVccjt2Bew5TRMjAFAXVQ ExpiresIn:7196}
+2016/08/18 18:30:03 [access_token_server.go:118][I] 获取微信accessToken 定时器获取数据 错误nicker.C <nil>
+2016/08/18 18:30:03 [access_token_server.go:119][I] 获取微信accessToken 定时器获取数据nicker.C &{Token:KnORswOxzGEEecG3172HFie6XdkD74aB-py_jWkZRxUaop8HT5iTvmefdmhAgkjXEtbdyFd5j2x0dCldQR9NjdXkKF371cvuZ0MAbMawDIrTKj1ZyEC3RkVccjt2Bew5TRMjAFAXVQ ExpiresIn:7196}
+2016/08/18 18:30:03 [access_token_server.go:126][I] 获取数据时间 ExpiresIn  7196
+2016/08/18 18:30:03 [access_token_server.go:127][I] 获取数据时，标准时间差  -7194000000000
+2016/08/18 18:30:03 [access_token_server.go:129][I] 获取数据时间太长7196
+2016/08/18 18:30:03 [access_token_server.go:130][I] 获取数据时间太长,重新启动定时器
+2016/08/18 18:30:03 [access_token_server.go:100][I] GetAndAccessTokenServer,for 循环
+2016/08/18 18:30:05 [access_token_server.go:116][I] 获取微信accessToken 启动定时器时间nicker.C 0xc0423481e0
+2016/08/18 18:30:05 [access_token_server.go:145][I] 链接微信服务器获取accessToken
+2016/08/18 18:30:05 [access_token_server.go:153][I] 与微信服务器建立链接
+2016/08/18 18:30:06 [access_token_server.go:155][I] 获取微信服务器数据：{"access_token":"KnORswOxzGEEecG3172HFie6XdkD74aB-py_jWkZRxXSaA8L6DuK7J04524np-3GYeUwG4jVMjpElCCAu-AOCNJDMhvFYmA2YsfBT942k85ZZ-A3pETpgqEYOQYl16xqKQLjAFAXDY","expires_in":7200}
+2016/08/18 18:30:06 [access_token_server.go:163][I] 获取微信服务器数据,r   &{s:{"access_token":"KnORswOxzGEEecG3172HFie6XdkD74aB-py_jWkZRxXSaA8L6DuK7J04524np-3GYeUwG4jVMjpElCCAu-AOCNJDMhvFYmA2YsfBT942k85ZZ-A3pETpgqEYOQYl16xqKQLjAFAXDY","expires_in":7200} i:0 prevRune:-1}
+2016/08/18 18:30:06 [access_token_server.go:165][I] 获取微信服务器数据,dec   &{r:0xc0422681c0 buf:[] d:{data:[] off:0 scan:{step:<nil> endTop:false parseState:[] err:<nil> redo:false redoCode:0 redoState:<nil> bytes:0} nextscan:{step:<nil> endTop:false parseState:[] err:<nil> redo:false redoCode:0 redoState:<nil> bytes:0} savedError:<nil> useNumber:false} scanp:0 scan:{step:<nil> endTop:false parseState:[] err:<nil> redo:false redoCode:0 redoState:<nil> bytes:0} err:<nil> tokenState:0 tokenStack:[]}
+2016/08/18 18:30:06 [access_token_server.go:169][I] 获取微信服务器数据,解析数据：{Token:KnORswOxzGEEecG3172HFie6XdkD74aB-py_jWkZRxXSaA8L6DuK7J04524np-3GYeUwG4jVMjpElCCAu-AOCNJDMhvFYmA2YsfBT942k85ZZ-A3pETpgqEYOQYl16xqKQLjAFAXDY ExpiresIn:7200}
+2016/08/18 18:30:06 [access_token_server.go:118][I] 获取微信accessToken 定时器获取数据 错误nicker.C <nil>
+2016/08/18 18:30:06 [access_token_server.go:119][I] 获取微信accessToken 定时器获取数据nicker.C &{Token:KnORswOxzGEEecG3172HFie6XdkD74aB-py_jWkZRxXSaA8L6DuK7J04524np-3GYeUwG4jVMjpElCCAu-AOCNJDMhvFYmA2YsfBT942k85ZZ-A3pETpgqEYOQYl16xqKQLjAFAXDY ExpiresIn:7200}
+2016/08/18 18:30:06 [access_token_server.go:126][I] 获取数据时间 ExpiresIn  7200
+2016/08/18 18:30:06 [access_token_server.go:127][I] 获取数据时，标准时间差  -7198000000000
+2016/08/18 18:30:06 [access_token_server.go:129][I] 获取数据时间太长7200
+2016/08/18 18:30:06 [access_token_server.go:130][I] 获取数据时间太长,重新启动定时器
+2016/08/18 18:30:06 [access_token_server.go:100][I] GetAndAccessTokenServer,for 循环
+2016/08/18 18:30:08 [access_token_server.go:116][I] 获取微信accessToken 启动定时器时间nicker.C 0xc04227e2a0
+2016/08/18 18:30:08 [access_token_server.go:145][I] 链接微信服务器获取accessToken
+2016/08/18 18:30:08 [access_token_server.go:153][I] 与微信服务器建立链接
+2016/08/18 18:30:08 [access_token_server.go:155][I] 获取微信服务器数据：{"access_token":"KnORswOxzGEEecG3172HFie6XdkD74aB-py_jWkZRxXcq7wiOXflQ-cdoIEiwvfl43SL3GyVWA-F0qh12HkFYEuQid7xrw6rGcowMnxbMbhgF8NnoXnfHeZyH3QaJ7F3DOCjAFAPAO","expires_in":7200}
+2016/08/18 18:30:08 [access_token_server.go:163][I] 获取微信服务器数据,r   &{s:{"access_token":"KnORswOxzGEEecG3172HFie6XdkD74aB-py_jWkZRxXcq7wiOXflQ-cdoIEiwvfl43SL3GyVWA-F0qh12HkFYEuQid7xrw6rGcowMnxbMbhgF8NnoXnfHeZyH3QaJ7F3DOCjAFAPAO","expires_in":7200} i:0 prevRune:-1}
+2016/08/18 18:30:08 [access_token_server.go:165][I] 获取微信服务器数据,dec   &{r:0xc0420bdc00 buf:[] d:{data:[] off:0 scan:{step:<nil> endTop:false parseState:[] err:<nil> redo:false redoCode:0 redoState:<nil> bytes:0} nextscan:{step:<nil> endTop:false parseState:[] err:<nil> redo:false redoCode:0 redoState:<nil> bytes:0} savedError:<nil> useNumber:false} scanp:0 scan:{step:<nil> endTop:false parseState:[] err:<nil> redo:false redoCode:0 redoState:<nil> bytes:0} err:<nil> tokenState:0 tokenStack:[]}
+2016/08/18 18:30:08 [access_token_server.go:169][I] 获取微信服务器数据,解析数据：{Token:KnORswOxzGEEecG3172HFie6XdkD74aB-py_jWkZRxXcq7wiOXflQ-cdoIEiwvfl43SL3GyVWA-F0qh12HkFYEuQid7xrw6rGcowMnxbMbhgF8NnoXnfHeZyH3QaJ7F3DOCjAFAPAO ExpiresIn:7200}
+2016/08/18 18:30:08 [access_token_server.go:118][I] 获取微信accessToken 定时器获取数据 错误nicker.C <nil>
+2016/08/18 18:30:08 [access_token_server.go:119][I] 获取微信accessToken 定时器获取数据nicker.C &{Token:KnORswOxzGEEecG3172HFie6XdkD74aB-py_jWkZRxXcq7wiOXflQ-cdoIEiwvfl43SL3GyVWA-F0qh12HkFYEuQid7xrw6rGcowMnxbMbhgF8NnoXnfHeZyH3QaJ7F3DOCjAFAPAO ExpiresIn:7200}
+2016/08/18 18:30:08 [access_token_server.go:126][I] 获取数据时间 ExpiresIn  7200
+2016/08/18 18:30:08 [access_token_server.go:127][I] 获取数据时，标准时间差  -7198000000000
+2016/08/18 18:30:08 [access_token_server.go:129][I] 获取数据时间太长7200
+2016/08/18 18:30:08 [access_token_server.go:130][I] 获取数据时间太长,重新启动定时器
+2016/08/18 18:30:08 [access_token_server.go:100][I] GetAndAccessTokenServer,for 循环
+2016/08/18 18:30:10 [access_token_server.go:116][I] 获取微信accessToken 启动定时器时间nicker.C 0xc04227fe00
+2016/08/18 18:30:10 [access_token_server.go:145][I] 链接微信服务器获取accessToken
+2016/08/18 18:30:10 [access_token_server.go:153][I] 与微信服务器建立链接
+2016/08/18 18:30:10 [access_token_server.go:155][I] 获取微信服务器数据：{"access_token":"KnORswOxzGEEecG3172HFie6XdkD74aB-py_jWkZRxXrAa4n3aoVRXHfh52fXM8LuWKR9iUaUd7lBiBOMGYzisQxLY5hS9ubkLCyUYh6ZtcbbWEUw0KERY1087PRkNJDDMYjAFAGPB","expires_in":7200}
+2016/08/18 18:30:10 [access_token_server.go:163][I] 获取微信服务器数据,r   &{s:{"access_token":"KnORswOxzGEEecG3172HFie6XdkD74aB-py_jWkZRxXrAa4n3aoVRXHfh52fXM8LuWKR9iUaUd7lBiBOMGYzisQxLY5hS9ubkLCyUYh6ZtcbbWEUw0KERY1087PRkNJDDMYjAFAGPB","expires_in":7200} i:0 prevRune:-1}
+2016/08/18 18:30:10 [access_token_server.go:165][I] 获取微信服务器数据,dec   &{r:0xc042370ac0 buf:[] d:{data:[] off:0 scan:{step:<nil> endTop:false parseState:[] err:<nil> redo:false redoCode:0 redoState:<nil> bytes:0} nextscan:{step:<nil> endTop:false parseState:[] err:<nil> redo:false redoCode:0 redoState:<nil> bytes:0} savedError:<nil> useNumber:false} scanp:0 scan:{step:<nil> endTop:false parseState:[] err:<nil> redo:false redoCode:0 redoState:<nil> bytes:0} err:<nil> tokenState:0 tokenStack:[]}
+2016/08/18 18:30:10 [access_token_server.go:169][I] 获取微信服务器数据,解析数据：{Token:KnORswOxzGEEecG3172HFie6XdkD74aB-py_jWkZRxXrAa4n3aoVRXHfh52fXM8LuWKR9iUaUd7lBiBOMGYzisQxLY5hS9ubkLCyUYh6ZtcbbWEUw0KERY1087PRkNJDDMYjAFAGPB ExpiresIn:7200}
+2016/08/18 18:30:10 [access_token_server.go:118][I] 获取微信accessToken 定时器获取数据 错误nicker.C <nil>
+2016/08/18 18:30:10 [access_token_server.go:119][I] 获取微信accessToken 定时器获取数据nicker.C &{Token:KnORswOxzGEEecG3172HFie6XdkD74aB-py_jWkZRxXrAa4n3aoVRXHfh52fXM8LuWKR9iUaUd7lBiBOMGYzisQxLY5hS9ubkLCyUYh6ZtcbbWEUw0KERY1087PRkNJDDMYjAFAGPB ExpiresIn:7200}
+2016/08/18 18:30:10 [access_token_server.go:126][I] 获取数据时间 ExpiresIn  7200
+2016/08/18 18:30:10 [access_token_server.go:127][I] 获取数据时，标准时间差  -7198000000000
+2016/08/18 18:30:10 [access_token_server.go:129][I] 获取数据时间太长7200
+2016/08/18 18:30:10 [access_token_server.go:130][I] 获取数据时间太长,重新启动定时器
+2016/08/18 18:30:10 [access_token_server.go:100][I] GetAndAccessTokenServer,for 循环
+2016/08/18 18:30:12 [access_token_server.go:116][I] 获取微信accessToken 启动定时器时间nicker.C 0xc042349a40
+2016/08/18 18:30:12 [access_token_server.go:145][I] 链接微信服务器获取accessToken
+2016/08/18 18:30:12 [access_token_server.go:153][I] 与微信服务器建立链接
+2016/08/18 18:30:12 [access_token_server.go:155][I] 获取微信服务器数据：{"access_token":"KnORswOxzGEEecG3172HFie6XdkD74aB-py_jWkZRxUAwuMvIibouWNiLv7mfrFzMmEXP4acoLRuxOrBhGh_LgPO1BLjmga3z0cg7Vo-HL3ItiQsu_4MnkkO4q4wvlzHOJIjAFABWV","expires_in":7200}
+2016/08/18 18:30:12 [access_token_server.go:163][I] 获取微信服务器数据,r   &{s:{"access_token":"KnORswOxzGEEecG3172HFie6XdkD74aB-py_jWkZRxUAwuMvIibouWNiLv7mfrFzMmEXP4acoLRuxOrBhGh_LgPO1BLjmga3z0cg7Vo-HL3ItiQsu_4MnkkO4q4wvlzHOJIjAFABWV","expires_in":7200} i:0 prevRune:-1}
+2016/08/18 18:30:12 [access_token_server.go:165][I] 获取微信服务器数据,dec   &{r:0xc042497d60 buf:[] d:{data:[] off:0 scan:{step:<nil> endTop:false parseState:[] err:<nil> redo:false redoCode:0 redoState:<nil> bytes:0} nextscan:{step:<nil> endTop:false parseState:[] err:<nil> redo:false redoCode:0 redoState:<nil> bytes:0} savedError:<nil> useNumber:false} scanp:0 scan:{step:<nil> endTop:false parseState:[] err:<nil> redo:false redoCode:0 redoState:<nil> bytes:0} err:<nil> tokenState:0 tokenStack:[]}
+2016/08/18 18:30:12 [access_token_server.go:169][I] 获取微信服务器数据,解析数据：{Token:KnORswOxzGEEecG3172HFie6XdkD74aB-py_jWkZRxUAwuMvIibouWNiLv7mfrFzMmEXP4acoLRuxOrBhGh_LgPO1BLjmga3z0cg7Vo-HL3ItiQsu_4MnkkO4q4wvlzHOJIjAFABWV ExpiresIn:7200}
+2016/08/18 18:30:12 [access_token_server.go:118][I] 获取微信accessToken 定时器获取数据 错误nicker.C <nil>
+2016/08/18 18:30:12 [access_token_server.go:119][I] 获取微信accessToken 定时器获取数据nicker.C &{Token:KnORswOxzGEEecG3172HFie6XdkD74aB-py_jWkZRxUAwuMvIibouWNiLv7mfrFzMmEXP4acoLRuxOrBhGh_LgPO1BLjmga3z0cg7Vo-HL3ItiQsu_4MnkkO4q4wvlzHOJIjAFABWV ExpiresIn:7200}
+2016/08/18 18:30:12 [access_token_server.go:126][I] 获取数据时间 ExpiresIn  7200
+2016/08/18 18:30:12 [access_token_server.go:127][I] 获取数据时，标准时间差  -7198000000000
+2016/08/18 18:30:12 [access_token_server.go:129][I] 获取数据时间太长7200
+2016/08/18 18:30:12 [access_token_server.go:130][I] 获取数据时间太长,重新启动定时器
+2016/08/18 18:30:12 [access_token_server.go:100][I] GetAndAccessTokenServer,for 循环
+2016/08/18 18:30:14 [access_token_server.go:116][I] 获取微信accessToken 启动定时器时间nicker.C 0xc04241b080
+2016/08/18 18:30:14 [access_token_server.go:145][I] 链接微信服务器获取accessToken
+2016/08/18 18:30:14 [access_token_server.go:153][I] 与微信服务器建立链接
+2016/08/18 18:30:14 [access_token_server.go:155][I] 获取微信服务器数据：{"access_token":"KnORswOxzGEEecG3172HFie6XdkD74aB-py_jWkZRxXacPUCwvwfVKsJ-jvU4AQY5xFm79VgCciBXNwWGI3paY_vzlCAjRjSPzZPQndVXvoaXFL2RH8xQUZMSXvcu-OfFCPjAFAWTG","expires_in":7200}
+2016/08/18 18:30:14 [access_token_server.go:163][I] 获取微信服务器数据,r   &{s:{"access_token":"KnORswOxzGEEecG3172HFie6XdkD74aB-py_jWkZRxXacPUCwvwfVKsJ-jvU4AQY5xFm79VgCciBXNwWGI3paY_vzlCAjRjSPzZPQndVXvoaXFL2RH8xQUZMSXvcu-OfFCPjAFAWTG","expires_in":7200} i:0 prevRune:-1}
+2016/08/18 18:30:14 [access_token_server.go:165][I] 获取微信服务器数据,dec   &{r:0xc0420b61a0 buf:[] d:{data:[] off:0 scan:{step:<nil> endTop:false parseState:[] err:<nil> redo:false redoCode:0 redoState:<nil> bytes:0} nextscan:{step:<nil> endTop:false parseState:[] err:<nil> redo:false redoCode:0 redoState:<nil> bytes:0} savedError:<nil> useNumber:false} scanp:0 scan:{step:<nil> endTop:false parseState:[] err:<nil> redo:false redoCode:0 redoState:<nil> bytes:0} err:<nil> tokenState:0 tokenStack:[]}
+2016/08/18 18:30:14 [access_token_server.go:169][I] 获取微信服务器数据,解析数据：{Token:KnORswOxzGEEecG3172HFie6XdkD74aB-py_jWkZRxXacPUCwvwfVKsJ-jvU4AQY5xFm79VgCciBXNwWGI3paY_vzlCAjRjSPzZPQndVXvoaXFL2RH8xQUZMSXvcu-OfFCPjAFAWTG ExpiresIn:7200}
+2016/08/18 18:30:14 [access_token_server.go:118][I] 获取微信accessToken 定时器获取数据 错误nicker.C <nil>
+2016/08/18 18:30:14 [access_token_server.go:119][I] 获取微信accessToken 定时器获取数据nicker.C &{Token:KnORswOxzGEEecG3172HFie6XdkD74aB-py_jWkZRxXacPUCwvwfVKsJ-jvU4AQY5xFm79VgCciBXNwWGI3paY_vzlCAjRjSPzZPQndVXvoaXFL2RH8xQUZMSXvcu-OfFCPjAFAWTG ExpiresIn:7200}
+2016/08/18 18:30:14 [access_token_server.go:126][I] 获取数据时间 ExpiresIn  7200
+2016/08/18 18:30:14 [access_token_server.go:127][I] 获取数据时，标准时间差  -7198000000000
+2016/08/18 18:30:14 [access_token_server.go:129][I] 获取数据时间太长7200
+2016/08/18 18:30:14 [access_token_server.go:130][I] 获取数据时间太长,重新启动定时器
+2016/08/18 18:30:14 [access_token_server.go:100][I] GetAndAccessTokenServer,for 循环
+2016/08/18 18:30:16 [access_token_server.go:116][I] 获取微信accessToken 启动定时器时间nicker.C 0xc0420b45a0
+2016/08/18 18:30:16 [access_token_server.go:145][I] 链接微信服务器获取accessToken
+2016/08/18 18:30:16 [access_token_server.go:153][I] 与微信服务器建立链接
+2016/08/18 18:30:16 [access_token_server.go:155][I] 获取微信服务器数据：{"access_token":"KnORswOxzGEEecG3172HFie6XdkD74aB-py_jWkZRxUHHhxO6v8hF0mIgLYesvm6OjRNJUgeq9QEUxbP-xH-qIbQ6g469MTdyBMBGWcwi6iC43VAbKpd-kZgw50Y-wVfEWXjAFAUMN","expires_in":7200}
+2016/08/18 18:30:16 [access_token_server.go:163][I] 获取微信服务器数据,r   &{s:{"access_token":"KnORswOxzGEEecG3172HFie6XdkD74aB-py_jWkZRxUHHhxO6v8hF0mIgLYesvm6OjRNJUgeq9QEUxbP-xH-qIbQ6g469MTdyBMBGWcwi6iC43VAbKpd-kZgw50Y-wVfEWXjAFAUMN","expires_in":7200} i:0 prevRune:-1}
+2016/08/18 18:30:16 [access_token_server.go:165][I] 获取微信服务器数据,dec   &{r:0xc0424e17e0 buf:[] d:{data:[] off:0 scan:{step:<nil> endTop:false parseState:[] err:<nil> redo:false redoCode:0 redoState:<nil> bytes:0} nextscan:{step:<nil> endTop:false parseState:[] err:<nil> redo:false redoCode:0 redoState:<nil> bytes:0} savedError:<nil> useNumber:false} scanp:0 scan:{step:<nil> endTop:false parseState:[] err:<nil> redo:false redoCode:0 redoState:<nil> bytes:0} err:<nil> tokenState:0 tokenStack:[]}
+2016/08/18 18:30:16 [access_token_server.go:169][I] 获取微信服务器数据,解析数据：{Token:KnORswOxzGEEecG3172HFie6XdkD74aB-py_jWkZRxUHHhxO6v8hF0mIgLYesvm6OjRNJUgeq9QEUxbP-xH-qIbQ6g469MTdyBMBGWcwi6iC43VAbKpd-kZgw50Y-wVfEWXjAFAUMN ExpiresIn:7200}
+2016/08/18 18:30:16 [access_token_server.go:118][I] 获取微信accessToken 定时器获取数据 错误nicker.C <nil>
+2016/08/18 18:30:16 [access_token_server.go:119][I] 获取微信accessToken 定时器获取数据nicker.C &{Token:KnORswOxzGEEecG3172HFie6XdkD74aB-py_jWkZRxUHHhxO6v8hF0mIgLYesvm6OjRNJUgeq9QEUxbP-xH-qIbQ6g469MTdyBMBGWcwi6iC43VAbKpd-kZgw50Y-wVfEWXjAFAUMN ExpiresIn:7200}
+2016/08/18 18:30:16 [access_token_server.go:126][I] 获取数据时间 ExpiresIn  7200
+2016/08/18 18:30:16 [access_token_server.go:127][I] 获取数据时，标准时间差  -7198000000000
+2016/08/18 18:30:16 [access_token_server.go:129][I] 获取数据时间太长7200
+2016/08/18 18:30:16 [access_token_server.go:130][I] 获取数据时间太长,重新启动定时器
+2016/08/18 18:30:16 [access_token_server.go:100][I] GetAndAccessTokenServer,for 循环
+2016/08/18 18:30:17 [access_token_server.go:40][I] 获取accessToken的配置
+2016/08/18 18:30:17 [access_token_server.go:45][I] 获取accessToken的配置==============start===================
+2016/08/18 18:30:17 [utils.go:48][I] key is access_token_url||value is https://api.weixin.qq.com/cgi-bin/token
+2016/08/18 18:30:17 [utils.go:48][I] key is appID||value is wx1dc762cdfeb4ed66
+2016/08/18 18:30:17 [utils.go:48][I] key is appsecret||value is a72c8ccb896f3f7ddaf45f5318035bde
+2016/08/18 18:30:17 [utils.go:48][I] key is grant_type||value is client_credential
+2016/08/18 18:30:17 [access_token_server.go:47][I] accessToken 配置文件信息：&{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/18 18:30:17 [access_token_server.go:48][I] 获取accessToken的配置==============end===================
+2016/08/18 18:30:17 [access_token_server.go:42][I] 获取accessToken的配置 &{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/18 18:30:24 [WxController.go:51][I] 接受微信服务器参数：/test
+2016/08/18 18:30:24 [WxController.go:52][I] test 数据
+2016/08/18 18:30:24 [access_token_server.go:87][I] accessToken 获取，数据结构初始化：&{CurrentAccessToken:0xc042344180 accessTokenResult:0xc0423441e0 LiveTime:0 Times:2h0m0s json:<nil>}
+2016/08/18 18:30:24 [access_token_server.go:88][I] accessToken 启动定时器，进行请求accessToken
+2016/08/18 18:30:24 [WxController.go:55][I] test 数据===================== &{CurrentAccessToken:0xc042344180 accessTokenResult:0xc0423441e0 LiveTime:0 Times:2h0m0s json:<nil>}
+2016/08/18 18:30:24 [access_token_server.go:184][I] 获取accessToken Token()
+2016/08/18 18:30:24 [access_token_server.go:196][I] 获取accessToken RefreshToken()  
+2016/08/18 18:30:24 [access_token_server.go:96][I] GetAndAccessTokenServer创建定时器，进行请求accessToken
+2016/08/18 18:30:24 [access_token_server.go:100][I] GetAndAccessTokenServer,for 循环
+2016/08/18 18:30:24 [access_token_server.go:104][I] 当前CurrentAccessToken:
+2016/08/18 18:30:24 [access_token_server.go:145][I] 链接微信服务器获取accessToken
+2016/08/18 18:30:24 [access_token_server.go:153][I] 与微信服务器建立链接
+2016/08/18 18:30:25 [access_token_server.go:155][I] 获取微信服务器数据：{"access_token":"7JHD6t4euiDU-50yGGK4mLT9sBNOdSU8nyBQc6p_T1kmPo8PD29AEh7z-QxxdjBTu0eKuowYgCHogUbuUj5N7EJ_J0NfKbKa5ZUV8FVjcB4XXXgAFAQQQ","expires_in":7200}
+2016/08/18 18:30:25 [access_token_server.go:163][I] 获取微信服务器数据,r   &{s:{"access_token":"7JHD6t4euiDU-50yGGK4mLT9sBNOdSU8nyBQc6p_T1kmPo8PD29AEh7z-QxxdjBTu0eKuowYgCHogUbuUj5N7EJ_J0NfKbKa5ZUV8FVjcB4XXXgAFAQQQ","expires_in":7200} i:0 prevRune:-1}
+2016/08/18 18:30:25 [access_token_server.go:165][I] 获取微信服务器数据,dec   &{r:0xc0423b85e0 buf:[] d:{data:[] off:0 scan:{step:<nil> endTop:false parseState:[] err:<nil> redo:false redoCode:0 redoState:<nil> bytes:0} nextscan:{step:<nil> endTop:false parseState:[] err:<nil> redo:false redoCode:0 redoState:<nil> bytes:0} savedError:<nil> useNumber:false} scanp:0 scan:{step:<nil> endTop:false parseState:[] err:<nil> redo:false redoCode:0 redoState:<nil> bytes:0} err:<nil> tokenState:0 tokenStack:[]}
+2016/08/18 18:30:25 [access_token_server.go:169][I] 获取微信服务器数据,解析数据：{Token:7JHD6t4euiDU-50yGGK4mLT9sBNOdSU8nyBQc6p_T1kmPo8PD29AEh7z-QxxdjBTu0eKuowYgCHogUbuUj5N7EJ_J0NfKbKa5ZUV8FVjcB4XXXgAFAQQQ ExpiresIn:7200}
+2016/08/18 18:30:25 [access_token_server.go:106][I] 已经请求微信服务器获取accessToken:&{Token:7JHD6t4euiDU-50yGGK4mLT9sBNOdSU8nyBQc6p_T1kmPo8PD29AEh7z-QxxdjBTu0eKuowYgCHogUbuUj5N7EJ_J0NfKbKa5ZUV8FVjcB4XXXgAFAQQQ ExpiresIn:7200}
+2016/08/18 18:30:25 [access_token_server.go:114][I] 获取微信accessToken &{CurrentAccessToken:0xc042344180 accessTokenResult:0xc0423441e0 LiveTime:0 Times:2h0m0s json:0xc0423b85c0}
+2016/08/18 18:30:25 [access_token_server.go:100][I] GetAndAccessTokenServer,for 循环
+2016/08/18 18:30:25 [access_token_server.go:199][I] 获取accessToken RefreshToken()  {accessTokenStrNew:7JHD6t4euiDU-50yGGK4mLT9sBNOdSU8nyBQc6p_T1kmPo8PD29AEh7z-QxxdjBTu0eKuowYgCHogUbuUj5N7EJ_J0NfKbKa5ZUV8FVjcB4XXXgAFAQQQ err:<nil>}
+2016/08/18 18:30:25 [access_token_server.go:190][I] 获取accessToken Token()  7JHD6t4euiDU-50yGGK4mLT9sBNOdSU8nyBQc6p_T1kmPo8PD29AEh7z-QxxdjBTu0eKuowYgCHogUbuUj5N7EJ_J0NfKbKa5ZUV8FVjcB4XXXgAFAQQQ

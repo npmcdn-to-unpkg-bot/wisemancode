@@ -125,7 +125,7 @@ TIMES_TICKER:
 			t := time.Duration(acc.ExpiresIn) * time.Second
 			log.Logger.Info("获取数据时间 ExpiresIn  %d", acc.ExpiresIn)
 			log.Logger.Info("获取数据时，标准时间差  %d", this.Times-t)
-			if this.Times-t > 5*time.Second {
+			if this.Times-t < 5*time.Second {
 				log.Logger.Info("获取数据时间太长%d", acc.ExpiresIn)
 				log.Logger.Info("获取数据时间太长,重新启动定时器")
 				this.Times = t
