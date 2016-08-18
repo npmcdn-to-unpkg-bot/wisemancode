@@ -87,7 +87,7 @@ func NewDefaultAccessTokenServer() (acc *AccessTokenServer) {
 	log.Logger.Info("accessToken 获取，数据结构初始化：%+v", acc)
 	log.Logger.Info("accessToken 启动定时器，进行请求accessToken")
 	go acc.GetAndAccessTokenServer()
-	return
+	return acc
 }
 
 //获取并且更新微信accessToken
@@ -97,6 +97,7 @@ func (this *AccessTokenServer) GetAndAccessTokenServer() {
 TIMES_TICKER:
 	nicker := time.NewTicker(this.Times)
 	for {
+		log.Logger.Info("GetAndAccessTokenServer,for 循环")
 		select {
 		case current := <-this.CurrentAccessToken:
 			//数据进行更新
@@ -112,25 +113,29 @@ TIMES_TICKER:
 			this.accessTokenResult <- accessResult{accessTokenStrNew: acc.Token}
 			log.Logger.Info("获取微信accessToken %+v", this)
 		case <-nicker.C:
-			log.Logger.Info("获取微信accessToken 启动定时器时间 %+v", nicker.C)
+			log.Logger.Info("获取微信accessToken 启动定时器时间nicker.C %+v", nicker.C)
 			acc, err := this.updateAccessToken("")
-			log.Logger.Info("获取微信accessToken 定时器获取数据 %+v", acc)
+			log.Logger.Info("获取微信accessToken 定时器获取数据 错误nicker.C %+v", err)
+			log.Logger.Info("获取微信accessToken 定时器获取数据nicker.C %+v", acc)
 			if err != nil {
 				this.accessTokenResult <- accessResult{err: err}
-				log.Logger.Info("获取微信accessToken 定时器获取数据错误 %+v", this)
+				log.Logger.Info("获取微信accessToken 定时器获取数据错误nicker.C %+v", this)
 				break
-			} else {
-				t := time.Duration(acc.ExpiresIn) * time.Second
-				if this.Times-t > 5*time.Second {
-					log.Logger.Info("获取数据时间太长%d", acc.ExpiresIn)
-					log.Logger.Info("获取数据时间太长,重新启动定时器")
-					this.Times = t
-					nicker.Stop()
-					goto TIMES_TICKER
-				}
-				this.accessTokenResult <- accessResult{accessTokenStrNew: acc.Token}
-				log.Logger.Info("获取微信accessToken 定时器获取数据 %+v", this)
 			}
+			t := time.Duration(acc.ExpiresIn) * time.Second
+			log.Logger.Info("获取数据时间 ExpiresIn  %d", acc.ExpiresIn)
+			log.Logger.Info("获取数据时，标准时间差  %d", this.Times-t)
+			if this.Times-t > 5*time.Second {
+				log.Logger.Info("获取数据时间太长%d", acc.ExpiresIn)
+				log.Logger.Info("获取数据时间太长,重新启动定时器")
+				this.Times = t
+				nicker.Stop()
+				goto TIMES_TICKER
+			}
+			log.Logger.Info("获取微信accessToken 定时器获取数据AccessTokenServer %+v", this)
+			//this.accessTokenResult <- accessResult{accessTokenStrNew: acc.Token}被堵塞了
+			log.Logger.Info("获取微信accessToken 定时器获取数据AccessTokenServer %+v", this)
+
 		}
 	}
 }
@@ -154,31 +159,43 @@ func (this *AccessTokenServer) updateAccessToken(current string) (jsonToken *Acc
 		return nil, err
 	}
 	var j AccessTokenJson
-	js := json.NewDecoder(strings.NewReader(msg))
-
-	if e := js.Decode(&j); e == io.EOF {
-		log.Logger.Info("获取微信服务器数据,解析数据：%+v", j)
-		atomic.StorePointer(&this.json, unsafe.Pointer(&j))
-		return &j, nil
-	} else if e != nil {
-		log.Logger.Info("获取微信服务器数据,解析数据错误：%+v", e)
-		atomic.StorePointer(&this.json, nil)
-		return nil, e
+	r := strings.NewReader(msg)
+	log.Logger.Info("获取微信服务器数据,r   %+v", r)
+	dec := json.NewDecoder(r)
+	log.Logger.Info("获取微信服务器数据,dec   %+v", dec)
+	//log.Logger.Info("获取微信服务器数据,dec   %+v", dec.Decode(&j))
+	for {
+		if e := dec.Decode(&j); e == io.EOF {
+			log.Logger.Info("获取微信服务器数据,解析数据：%+v", j)
+			atomic.StorePointer(&this.json, unsafe.Pointer(&j))
+			return &j, nil
+		} else if e != nil {
+			log.Logger.Info("获取微信服务器数据,解析数据错误：%+v", e)
+			atomic.StorePointer(&this.json, nil)
+			return nil, e
+		}
 	}
+
 	return
 }
 
 //从当前缓存中获取最新的AccessToken 是一个原子操作
 func (this *AccessTokenServer) Token() (token string, err error) {
+	log.Logger.Info("获取accessToken Token()")
 	if p := (*AccessTokenJson)(atomic.LoadPointer(&this.json)); p != nil {
-		return p.Token, nil
+		log.Logger.Info("获取accessToken Token()  %+v", p)
+		token, err = p.Token, error(nil)
 	}
-	return this.RefreshToken("")
+	token, err = this.RefreshToken("")
+	log.Logger.Info("获取accessToken Token()  %+v", token)
+	return
 }
 
 //刷新就是把当前的accesstoken 换成最新的accessToken 很大可能是一致
 func (this *AccessTokenServer) RefreshToken(current string) (token string, err error) {
+	log.Logger.Info("获取accessToken RefreshToken()  %+s", current)
 	this.CurrentAccessToken <- current
 	res := <-this.accessTokenResult
+	log.Logger.Info("获取accessToken RefreshToken()  %+v", res)
 	return res.accessTokenStrNew, res.err
 }

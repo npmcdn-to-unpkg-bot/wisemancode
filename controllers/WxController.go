@@ -6,6 +6,7 @@ import (
 
 	"wisemancode/log"
 	"wisemancode/utils"
+	"wisemancode/wechat/sync_access_token"
 
 	"github.com/astaxie/beego"
 )
@@ -45,4 +46,13 @@ func (wxCon *WXController) Get() {
 		log.Logger.Error("微信服务起验证签名失败")
 		return
 	}
+}
+func (wxCon *WXController) Test() {
+	log.Logger.Info("接受微信服务器参数：" + wxCon.Ctx.Request.URL.String())
+	log.Logger.Info("test 数据")
+	wxCon.TplName = "index.tpl"
+	var acc *syncAccessToken.AccessTokenServer = syncAccessToken.NewDefaultAccessTokenServer()
+	log.Logger.Info("test 数据===================== %+v", acc)
+	acc.Token()
+	return
 }
