@@ -2660,3 +2660,389 @@
 2016/08/18 18:30:25 [access_token_server.go:100][I] GetAndAccessTokenServer,for 循环
 2016/08/18 18:30:25 [access_token_server.go:199][I] 获取accessToken RefreshToken()  {accessTokenStrNew:7JHD6t4euiDU-50yGGK4mLT9sBNOdSU8nyBQc6p_T1kmPo8PD29AEh7z-QxxdjBTu0eKuowYgCHogUbuUj5N7EJ_J0NfKbKa5ZUV8FVjcB4XXXgAFAQQQ err:<nil>}
 2016/08/18 18:30:25 [access_token_server.go:190][I] 获取accessToken Token()  7JHD6t4euiDU-50yGGK4mLT9sBNOdSU8nyBQc6p_T1kmPo8PD29AEh7z-QxxdjBTu0eKuowYgCHogUbuUj5N7EJ_J0NfKbKa5ZUV8FVjcB4XXXgAFAQQQ
+2016/08/21 19:25:29 [access_token_server.go:40] [I] 获取accessToken的配置
+2016/08/21 19:25:29 [access_token_server.go:45] [I] 获取accessToken的配置==============start===================
+2016/08/21 19:25:29 [utils.go:49] [I] key is access_token_url||value is https://api.weixin.qq.com/cgi-bin/token
+2016/08/21 19:25:29 [utils.go:49] [I] key is appID||value is wx1dc762cdfeb4ed66
+2016/08/21 19:25:29 [utils.go:49] [I] key is appsecret||value is a72c8ccb896f3f7ddaf45f5318035bde
+2016/08/21 19:25:29 [utils.go:49] [I] key is grant_type||value is client_credential
+2016/08/21 19:25:29 [access_token_server.go:47] [I] accessToken 配置文件信息：&{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/21 19:25:29 [access_token_server.go:48] [I] 获取accessToken的配置==============end===================
+2016/08/21 19:25:29 [access_token_server.go:42] [I] 获取accessToken的配置 &{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/21 20:43:44 [access_token_server.go:40] [I] 获取accessToken的配置
+2016/08/21 20:43:44 [access_token_server.go:45] [I] 获取accessToken的配置==============start===================
+2016/08/21 20:43:44 [utils.go:49] [I] key is access_token_url||value is https://api.weixin.qq.com/cgi-bin/token
+2016/08/21 20:43:44 [utils.go:49] [I] key is appID||value is wx1dc762cdfeb4ed66
+2016/08/21 20:43:44 [utils.go:49] [I] key is appsecret||value is a72c8ccb896f3f7ddaf45f5318035bde
+2016/08/21 20:43:44 [utils.go:49] [I] key is grant_type||value is client_credential
+2016/08/21 20:43:44 [access_token_server.go:47] [I] accessToken 配置文件信息：&{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/21 20:43:44 [access_token_server.go:48] [I] 获取accessToken的配置==============end===================
+2016/08/21 20:43:44 [access_token_server.go:42] [I] 获取accessToken的配置 &{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/21 21:09:17 [access_token_server.go:40] [I] 获取accessToken的配置
+2016/08/21 21:09:17 [access_token_server.go:45] [I] 获取accessToken的配置==============start===================
+2016/08/21 21:09:17 [utils.go:49] [I] key is access_token_url||value is https://api.weixin.qq.com/cgi-bin/token
+2016/08/21 21:09:17 [utils.go:49] [I] key is appID||value is wx1dc762cdfeb4ed66
+2016/08/21 21:09:17 [utils.go:49] [I] key is appsecret||value is a72c8ccb896f3f7ddaf45f5318035bde
+2016/08/21 21:09:17 [utils.go:49] [I] key is grant_type||value is client_credential
+2016/08/21 21:09:17 [access_token_server.go:47] [I] accessToken 配置文件信息：&{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/21 21:09:17 [access_token_server.go:48] [I] 获取accessToken的配置==============end===================
+2016/08/21 21:09:17 [access_token_server.go:42] [I] 获取accessToken的配置 &{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/21 21:09:58 [access_token_server.go:40] [I] 获取accessToken的配置
+2016/08/21 21:09:58 [access_token_server.go:45] [I] 获取accessToken的配置==============start===================
+2016/08/21 21:09:58 [utils.go:49] [I] key is access_token_url||value is https://api.weixin.qq.com/cgi-bin/token
+2016/08/21 21:09:58 [utils.go:49] [I] key is appID||value is wx1dc762cdfeb4ed66
+2016/08/21 21:09:58 [utils.go:49] [I] key is appsecret||value is a72c8ccb896f3f7ddaf45f5318035bde
+2016/08/21 21:09:58 [utils.go:49] [I] key is grant_type||value is client_credential
+2016/08/21 21:09:58 [access_token_server.go:47] [I] accessToken 配置文件信息：&{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/21 21:09:58 [access_token_server.go:48] [I] 获取accessToken的配置==============end===================
+2016/08/21 21:09:58 [access_token_server.go:42] [I] 获取accessToken的配置 &{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/21 21:17:21 [WxController.go:31] [I] 微信服务器进行验证
+2016/08/21 21:17:21 [WxController.go:33] [I] 接受微信服务器参数：/wx/
+2016/08/21 21:17:21 [utils.go:49] [I] key is token||value is wx12sscwweewwqwwqqs
+2016/08/21 21:17:21 [WxController.go:45] [I] 微信服务器发来的签名串：
+2016/08/21 21:17:21 [WxController.go:48] [E] timestamp is null
+2016/08/21 21:20:18 [WxController.go:23] [I] RequestBody:<xml><ToUserName><![CDATA[gh_ee33478575bf]]></ToUserName>
+<FromUserName><![CDATA[oYp2KxLycN29A8I7eDEhBR6caaaI]]></FromUserName>
+<CreateTime>1471785618</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+2016/08/21 21:20:18 [message.go:92] [I] 开始接收消息,并且解析：<xml><ToUserName><![CDATA[gh_ee33478575bf]]></ToUserName>
+<FromUserName><![CDATA[oYp2KxLycN29A8I7eDEhBR6caaaI]]></FromUserName>
+<CreateTime>1471785618</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+2016/08/21 21:20:18 [utils.go:55] [I] 需要解析的XML数据：<xml><ToUserName><![CDATA[gh_ee33478575bf]]></ToUserName>
+<FromUserName><![CDATA[oYp2KxLycN29A8I7eDEhBR6caaaI]]></FromUserName>
+<CreateTime>1471785618</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+2016/08/21 21:20:26 [WxController.go:23] [I] RequestBody:<xml><ToUserName><![CDATA[gh_ee33478575bf]]></ToUserName>
+<FromUserName><![CDATA[oYp2KxLycN29A8I7eDEhBR6caaaI]]></FromUserName>
+<CreateTime>1471785627</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[凤飞飞]]></Content>
+<MsgId>6321271135106761251</MsgId>
+</xml>
+2016/08/21 21:20:26 [message.go:92] [I] 开始接收消息,并且解析：<xml><ToUserName><![CDATA[gh_ee33478575bf]]></ToUserName>
+<FromUserName><![CDATA[oYp2KxLycN29A8I7eDEhBR6caaaI]]></FromUserName>
+<CreateTime>1471785627</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[凤飞飞]]></Content>
+<MsgId>6321271135106761251</MsgId>
+</xml>
+2016/08/21 21:20:26 [utils.go:55] [I] 需要解析的XML数据：<xml><ToUserName><![CDATA[gh_ee33478575bf]]></ToUserName>
+<FromUserName><![CDATA[oYp2KxLycN29A8I7eDEhBR6caaaI]]></FromUserName>
+<CreateTime>1471785627</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[凤飞飞]]></Content>
+<MsgId>6321271135106761251</MsgId>
+</xml>
+2016/08/21 21:23:35 [access_token_server.go:40] [I] 获取accessToken的配置
+2016/08/21 21:23:35 [access_token_server.go:45] [I] 获取accessToken的配置==============start===================
+2016/08/21 21:23:35 [utils.go:49] [I] key is access_token_url||value is https://api.weixin.qq.com/cgi-bin/token
+2016/08/21 21:23:35 [utils.go:49] [I] key is appID||value is wx1dc762cdfeb4ed66
+2016/08/21 21:23:35 [utils.go:49] [I] key is appsecret||value is a72c8ccb896f3f7ddaf45f5318035bde
+2016/08/21 21:23:35 [utils.go:49] [I] key is grant_type||value is client_credential
+2016/08/21 21:23:35 [access_token_server.go:47] [I] accessToken 配置文件信息：&{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/21 21:23:35 [access_token_server.go:48] [I] 获取accessToken的配置==============end===================
+2016/08/21 21:23:35 [access_token_server.go:42] [I] 获取accessToken的配置 &{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/21 21:24:29 [access_token_server.go:40] [I] 获取accessToken的配置
+2016/08/21 21:24:29 [access_token_server.go:45] [I] 获取accessToken的配置==============start===================
+2016/08/21 21:24:29 [utils.go:49] [I] key is access_token_url||value is https://api.weixin.qq.com/cgi-bin/token
+2016/08/21 21:24:29 [utils.go:49] [I] key is appID||value is wx1dc762cdfeb4ed66
+2016/08/21 21:24:29 [utils.go:49] [I] key is appsecret||value is a72c8ccb896f3f7ddaf45f5318035bde
+2016/08/21 21:24:29 [utils.go:49] [I] key is grant_type||value is client_credential
+2016/08/21 21:24:29 [access_token_server.go:47] [I] accessToken 配置文件信息：&{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/21 21:24:29 [access_token_server.go:48] [I] 获取accessToken的配置==============end===================
+2016/08/21 21:24:29 [access_token_server.go:42] [I] 获取accessToken的配置 &{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/21 21:24:58 [access_token_server.go:40] [I] 获取accessToken的配置
+2016/08/21 21:24:58 [access_token_server.go:45] [I] 获取accessToken的配置==============start===================
+2016/08/21 21:24:58 [utils.go:49] [I] key is access_token_url||value is https://api.weixin.qq.com/cgi-bin/token
+2016/08/21 21:24:58 [utils.go:49] [I] key is appID||value is wx1dc762cdfeb4ed66
+2016/08/21 21:24:58 [utils.go:49] [I] key is appsecret||value is a72c8ccb896f3f7ddaf45f5318035bde
+2016/08/21 21:24:58 [utils.go:49] [I] key is grant_type||value is client_credential
+2016/08/21 21:24:58 [access_token_server.go:47] [I] accessToken 配置文件信息：&{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/21 21:24:58 [access_token_server.go:48] [I] 获取accessToken的配置==============end===================
+2016/08/21 21:24:58 [access_token_server.go:42] [I] 获取accessToken的配置 &{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/21 21:25:21 [access_token_server.go:40] [I] 获取accessToken的配置
+2016/08/21 21:25:21 [access_token_server.go:45] [I] 获取accessToken的配置==============start===================
+2016/08/21 21:25:21 [utils.go:49] [I] key is access_token_url||value is https://api.weixin.qq.com/cgi-bin/token
+2016/08/21 21:25:21 [utils.go:49] [I] key is appID||value is wx1dc762cdfeb4ed66
+2016/08/21 21:25:21 [utils.go:49] [I] key is appsecret||value is a72c8ccb896f3f7ddaf45f5318035bde
+2016/08/21 21:25:21 [utils.go:49] [I] key is grant_type||value is client_credential
+2016/08/21 21:25:21 [access_token_server.go:47] [I] accessToken 配置文件信息：&{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/21 21:25:21 [access_token_server.go:48] [I] 获取accessToken的配置==============end===================
+2016/08/21 21:25:21 [access_token_server.go:42] [I] 获取accessToken的配置 &{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/21 21:25:28 [access_token_server.go:40] [I] 获取accessToken的配置
+2016/08/21 21:25:28 [access_token_server.go:45] [I] 获取accessToken的配置==============start===================
+2016/08/21 21:25:28 [utils.go:49] [I] key is access_token_url||value is https://api.weixin.qq.com/cgi-bin/token
+2016/08/21 21:25:28 [utils.go:49] [I] key is appID||value is wx1dc762cdfeb4ed66
+2016/08/21 21:25:28 [utils.go:49] [I] key is appsecret||value is a72c8ccb896f3f7ddaf45f5318035bde
+2016/08/21 21:25:28 [utils.go:49] [I] key is grant_type||value is client_credential
+2016/08/21 21:25:28 [access_token_server.go:47] [I] accessToken 配置文件信息：&{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/21 21:25:28 [access_token_server.go:48] [I] 获取accessToken的配置==============end===================
+2016/08/21 21:25:28 [access_token_server.go:42] [I] 获取accessToken的配置 &{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/21 21:25:48 [WxController.go:23] [I] RequestBody:<xml><ToUserName><![CDATA[gh_ee33478575bf]]></ToUserName>
+<FromUserName><![CDATA[oYp2KxLycN29A8I7eDEhBR6caaaI]]></FromUserName>
+<CreateTime>1471785949</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[一个哥哥分]]></Content>
+<MsgId>6321272518086230788</MsgId>
+</xml>
+2016/08/21 21:25:48 [message.go:92] [I] 开始接收消息,并且解析：<xml><ToUserName><![CDATA[gh_ee33478575bf]]></ToUserName>
+<FromUserName><![CDATA[oYp2KxLycN29A8I7eDEhBR6caaaI]]></FromUserName>
+<CreateTime>1471785949</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[一个哥哥分]]></Content>
+<MsgId>6321272518086230788</MsgId>
+</xml>
+2016/08/21 21:25:48 [utils.go:55] [I] 需要解析的XML数据：<xml><ToUserName><![CDATA[gh_ee33478575bf]]></ToUserName>
+<FromUserName><![CDATA[oYp2KxLycN29A8I7eDEhBR6caaaI]]></FromUserName>
+<CreateTime>1471785949</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[一个哥哥分]]></Content>
+<MsgId>6321272518086230788</MsgId>
+</xml>
+2016/08/21 21:25:48 [utils.go:60] [I] 解析xml发生错误：XML syntax error on line 1: illegal character code U+0000
+2016/08/21 21:25:48 [utils.go:62] [I] 解析xml结果：&{XMLName:{Space: Local:} ToUserName: FromUserName: CreateTime:0 MsgType: MsgID:0 MediaID: Content: PicUrl: VoiceFormat: VoiceRecognition: VideoThumbMediaID: LocationLabel: LocationX:0 LocationY:0 LocationScale:0 LinkTitle: LinkDescription: LinkURL: Event: EventKey: EventTicket: EventLatitude:0 EventLongitude:0 EventPrecision:0}
+2016/08/21 21:34:00 [access_token_server.go:40] [I] 获取accessToken的配置
+2016/08/21 21:34:00 [access_token_server.go:45] [I] 获取accessToken的配置==============start===================
+2016/08/21 21:34:00 [utils.go:49] [I] key is access_token_url||value is https://api.weixin.qq.com/cgi-bin/token
+2016/08/21 21:34:00 [utils.go:49] [I] key is appID||value is wx1dc762cdfeb4ed66
+2016/08/21 21:34:00 [utils.go:49] [I] key is appsecret||value is a72c8ccb896f3f7ddaf45f5318035bde
+2016/08/21 21:34:00 [utils.go:49] [I] key is grant_type||value is client_credential
+2016/08/21 21:34:00 [access_token_server.go:47] [I] accessToken 配置文件信息：&{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/21 21:34:00 [access_token_server.go:48] [I] 获取accessToken的配置==============end===================
+2016/08/21 21:34:00 [access_token_server.go:42] [I] 获取accessToken的配置 &{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/21 21:34:14 [WxController.go:23] [I] RequestBody:<xml><ToUserName><![CDATA[gh_ee33478575bf]]></ToUserName>
+<FromUserName><![CDATA[oYp2KxLycN29A8I7eDEhBR6caaaI]]></FromUserName>
+<CreateTime>1471786454</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[多大的]]></Content>
+<MsgId>6321274687044715664</MsgId>
+</xml>
+2016/08/21 21:34:14 [message.go:92] [I] 开始接收消息,并且解析：<xml><ToUserName><![CDATA[gh_ee33478575bf]]></ToUserName>
+<FromUserName><![CDATA[oYp2KxLycN29A8I7eDEhBR6caaaI]]></FromUserName>
+<CreateTime>1471786454</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[多大的]]></Content>
+<MsgId>6321274687044715664</MsgId>
+</xml>
+2016/08/21 21:34:14 [utils.go:55] [I] 需要解析的XML数据：<xml><ToUserName><![CDATA[gh_ee33478575bf]]></ToUserName>
+<FromUserName><![CDATA[oYp2KxLycN29A8I7eDEhBR6caaaI]]></FromUserName>
+<CreateTime>1471786454</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[多大的]]></Content>
+<MsgId>6321274687044715664</MsgId>
+</xml>
+2016/08/21 21:34:14 [utils.go:62] [I] 解析xml结果：&{XMLName:{Space: Local:xml} ToUserName:gh_ee33478575bf FromUserName:oYp2KxLycN29A8I7eDEhBR6caaaI CreateTime:1471786454 MsgType:text MsgID:6321274687044715664 MediaID: Content:多大的 PicUrl: VoiceFormat: VoiceRecognition: VideoThumbMediaID: LocationLabel: LocationX:0 LocationY:0 LocationScale:0 LinkTitle: LinkDescription: LinkURL: Event: EventKey: EventTicket: EventLatitude:0 EventLongitude:0 EventPrecision:0}
+2016/08/21 21:34:14 [message.go:103] [I] 开始接收消息，解析结束：&{XMLName:{Space: Local:xml} ToUserName:gh_ee33478575bf FromUserName:oYp2KxLycN29A8I7eDEhBR6caaaI CreateTime:1471786454 MsgType:text MsgID:6321274687044715664 MediaID: Content:多大的 PicUrl: VoiceFormat: VoiceRecognition: VideoThumbMediaID: LocationLabel: LocationX:0 LocationY:0 LocationScale:0 LinkTitle: LinkDescription: LinkURL: Event: EventKey: EventTicket: EventLatitude:0 EventLongitude:0 EventPrecision:0}
+2016/08/21 21:34:52 [WxController.go:23] [I] RequestBody:<xml><ToUserName><![CDATA[gh_ee33478575bf]]></ToUserName>
+<FromUserName><![CDATA[oYp2KxLycN29A8I7eDEhBR6caaaI]]></FromUserName>
+<CreateTime>1471786493</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[-/::'(]]></Content>
+<MsgId>6321274854548440245</MsgId>
+</xml>
+2016/08/21 21:34:52 [message.go:92] [I] 开始接收消息,并且解析：<xml><ToUserName><![CDATA[gh_ee33478575bf]]></ToUserName>
+<FromUserName><![CDATA[oYp2KxLycN29A8I7eDEhBR6caaaI]]></FromUserName>
+<CreateTime>1471786493</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[-/::'(]]></Content>
+<MsgId>6321274854548440245</MsgId>
+</xml>
+2016/08/21 21:34:52 [utils.go:55] [I] 需要解析的XML数据：<xml><ToUserName><![CDATA[gh_ee33478575bf]]></ToUserName>
+<FromUserName><![CDATA[oYp2KxLycN29A8I7eDEhBR6caaaI]]></FromUserName>
+<CreateTime>1471786493</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[-/::'(]]></Content>
+<MsgId>6321274854548440245</MsgId>
+</xml>
+2016/08/21 21:34:52 [utils.go:62] [I] 解析xml结果：&{XMLName:{Space: Local:xml} ToUserName:gh_ee33478575bf FromUserName:oYp2KxLycN29A8I7eDEhBR6caaaI CreateTime:1471786493 MsgType:text MsgID:6321274854548440245 MediaID: Content:-/::'( PicUrl: VoiceFormat: VoiceRecognition: VideoThumbMediaID: LocationLabel: LocationX:0 LocationY:0 LocationScale:0 LinkTitle: LinkDescription: LinkURL: Event: EventKey: EventTicket: EventLatitude:0 EventLongitude:0 EventPrecision:0}
+2016/08/21 21:34:52 [message.go:103] [I] 开始接收消息，解析结束：&{XMLName:{Space: Local:xml} ToUserName:gh_ee33478575bf FromUserName:oYp2KxLycN29A8I7eDEhBR6caaaI CreateTime:1471786493 MsgType:text MsgID:6321274854548440245 MediaID: Content:-/::'( PicUrl: VoiceFormat: VoiceRecognition: VideoThumbMediaID: LocationLabel: LocationX:0 LocationY:0 LocationScale:0 LinkTitle: LinkDescription: LinkURL: Event: EventKey: EventTicket: EventLatitude:0 EventLongitude:0 EventPrecision:0}
+2016/08/22 08:23:09 [access_token_server.go:40] [I] 获取accessToken的配置
+2016/08/22 08:23:09 [access_token_server.go:45] [I] 获取accessToken的配置==============start===================
+2016/08/22 08:23:09 [utils.go:49] [I] key is access_token_url||value is https://api.weixin.qq.com/cgi-bin/token
+2016/08/22 08:23:09 [utils.go:49] [I] key is appID||value is wx1dc762cdfeb4ed66
+2016/08/22 08:23:09 [utils.go:49] [I] key is appsecret||value is a72c8ccb896f3f7ddaf45f5318035bde
+2016/08/22 08:23:09 [utils.go:49] [I] key is grant_type||value is client_credential
+2016/08/22 08:23:09 [access_token_server.go:47] [I] accessToken 配置文件信息：&{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/22 08:23:09 [access_token_server.go:48] [I] 获取accessToken的配置==============end===================
+2016/08/22 08:23:09 [access_token_server.go:42] [I] 获取accessToken的配置 &{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/22 08:23:51 [access_token_server.go:40] [I] 获取accessToken的配置
+2016/08/22 08:23:51 [access_token_server.go:45] [I] 获取accessToken的配置==============start===================
+2016/08/22 08:23:51 [utils.go:49] [I] key is access_token_url||value is https://api.weixin.qq.com/cgi-bin/token
+2016/08/22 08:23:51 [utils.go:49] [I] key is appID||value is wx1dc762cdfeb4ed66
+2016/08/22 08:23:51 [utils.go:49] [I] key is appsecret||value is a72c8ccb896f3f7ddaf45f5318035bde
+2016/08/22 08:23:51 [utils.go:49] [I] key is grant_type||value is client_credential
+2016/08/22 08:23:51 [access_token_server.go:47] [I] accessToken 配置文件信息：&{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/22 08:23:51 [access_token_server.go:48] [I] 获取accessToken的配置==============end===================
+2016/08/22 08:23:51 [access_token_server.go:42] [I] 获取accessToken的配置 &{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/22 08:24:25 [access_token_server.go:40] [I] 获取accessToken的配置
+2016/08/22 08:24:25 [access_token_server.go:45] [I] 获取accessToken的配置==============start===================
+2016/08/22 08:24:25 [utils.go:49] [I] key is access_token_url||value is https://api.weixin.qq.com/cgi-bin/token
+2016/08/22 08:24:25 [utils.go:49] [I] key is appID||value is wx1dc762cdfeb4ed66
+2016/08/22 08:24:25 [utils.go:49] [I] key is appsecret||value is a72c8ccb896f3f7ddaf45f5318035bde
+2016/08/22 08:24:25 [utils.go:49] [I] key is grant_type||value is client_credential
+2016/08/22 08:24:25 [access_token_server.go:47] [I] accessToken 配置文件信息：&{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/22 08:24:25 [access_token_server.go:48] [I] 获取accessToken的配置==============end===================
+2016/08/22 08:24:25 [access_token_server.go:42] [I] 获取accessToken的配置 &{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/22 08:24:30 [access_token_server.go:40] [I] 获取accessToken的配置
+2016/08/22 08:24:30 [access_token_server.go:45] [I] 获取accessToken的配置==============start===================
+2016/08/22 08:24:30 [utils.go:49] [I] key is access_token_url||value is https://api.weixin.qq.com/cgi-bin/token
+2016/08/22 08:24:30 [utils.go:49] [I] key is appID||value is wx1dc762cdfeb4ed66
+2016/08/22 08:24:30 [utils.go:49] [I] key is appsecret||value is a72c8ccb896f3f7ddaf45f5318035bde
+2016/08/22 08:24:30 [utils.go:49] [I] key is grant_type||value is client_credential
+2016/08/22 08:24:30 [access_token_server.go:47] [I] accessToken 配置文件信息：&{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/22 08:24:30 [access_token_server.go:48] [I] 获取accessToken的配置==============end===================
+2016/08/22 08:24:30 [access_token_server.go:42] [I] 获取accessToken的配置 &{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/22 08:24:59 [access_token_server.go:40] [I] 获取accessToken的配置
+2016/08/22 08:24:59 [access_token_server.go:45] [I] 获取accessToken的配置==============start===================
+2016/08/22 08:24:59 [utils.go:49] [I] key is access_token_url||value is https://api.weixin.qq.com/cgi-bin/token
+2016/08/22 08:24:59 [utils.go:49] [I] key is appID||value is wx1dc762cdfeb4ed66
+2016/08/22 08:24:59 [utils.go:49] [I] key is appsecret||value is a72c8ccb896f3f7ddaf45f5318035bde
+2016/08/22 08:24:59 [utils.go:49] [I] key is grant_type||value is client_credential
+2016/08/22 08:24:59 [access_token_server.go:47] [I] accessToken 配置文件信息：&{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/22 08:24:59 [access_token_server.go:48] [I] 获取accessToken的配置==============end===================
+2016/08/22 08:24:59 [access_token_server.go:42] [I] 获取accessToken的配置 &{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/22 08:25:07 [access_token_server.go:40] [I] 获取accessToken的配置
+2016/08/22 08:25:07 [access_token_server.go:45] [I] 获取accessToken的配置==============start===================
+2016/08/22 08:25:07 [utils.go:49] [I] key is access_token_url||value is https://api.weixin.qq.com/cgi-bin/token
+2016/08/22 08:25:07 [utils.go:49] [I] key is appID||value is wx1dc762cdfeb4ed66
+2016/08/22 08:25:07 [utils.go:49] [I] key is appsecret||value is a72c8ccb896f3f7ddaf45f5318035bde
+2016/08/22 08:25:07 [utils.go:49] [I] key is grant_type||value is client_credential
+2016/08/22 08:25:07 [access_token_server.go:47] [I] accessToken 配置文件信息：&{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/22 08:25:07 [access_token_server.go:48] [I] 获取accessToken的配置==============end===================
+2016/08/22 08:25:07 [access_token_server.go:42] [I] 获取accessToken的配置 &{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/22 08:25:54 [access_token_server.go:40] [I] 获取accessToken的配置
+2016/08/22 08:25:54 [access_token_server.go:45] [I] 获取accessToken的配置==============start===================
+2016/08/22 08:25:54 [utils.go:49] [I] key is access_token_url||value is https://api.weixin.qq.com/cgi-bin/token
+2016/08/22 08:25:54 [utils.go:49] [I] key is appID||value is wx1dc762cdfeb4ed66
+2016/08/22 08:25:54 [utils.go:49] [I] key is appsecret||value is a72c8ccb896f3f7ddaf45f5318035bde
+2016/08/22 08:25:54 [utils.go:49] [I] key is grant_type||value is client_credential
+2016/08/22 08:25:54 [access_token_server.go:47] [I] accessToken 配置文件信息：&{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/22 08:25:54 [access_token_server.go:48] [I] 获取accessToken的配置==============end===================
+2016/08/22 08:25:54 [access_token_server.go:42] [I] 获取accessToken的配置 &{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/22 08:26:19 [access_token_server.go:40] [I] 获取accessToken的配置
+2016/08/22 08:26:19 [access_token_server.go:45] [I] 获取accessToken的配置==============start===================
+2016/08/22 08:26:19 [utils.go:49] [I] key is access_token_url||value is https://api.weixin.qq.com/cgi-bin/token
+2016/08/22 08:26:19 [utils.go:49] [I] key is appID||value is wx1dc762cdfeb4ed66
+2016/08/22 08:26:19 [utils.go:49] [I] key is appsecret||value is a72c8ccb896f3f7ddaf45f5318035bde
+2016/08/22 08:26:19 [utils.go:49] [I] key is grant_type||value is client_credential
+2016/08/22 08:26:19 [access_token_server.go:47] [I] accessToken 配置文件信息：&{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/22 08:26:19 [access_token_server.go:48] [I] 获取accessToken的配置==============end===================
+2016/08/22 08:26:19 [access_token_server.go:42] [I] 获取accessToken的配置 &{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/22 08:26:29 [access_token_server.go:40] [I] 获取accessToken的配置
+2016/08/22 08:26:29 [access_token_server.go:45] [I] 获取accessToken的配置==============start===================
+2016/08/22 08:26:29 [utils.go:49] [I] key is access_token_url||value is https://api.weixin.qq.com/cgi-bin/token
+2016/08/22 08:26:29 [utils.go:49] [I] key is appID||value is wx1dc762cdfeb4ed66
+2016/08/22 08:26:29 [utils.go:49] [I] key is appsecret||value is a72c8ccb896f3f7ddaf45f5318035bde
+2016/08/22 08:26:29 [utils.go:49] [I] key is grant_type||value is client_credential
+2016/08/22 08:26:29 [access_token_server.go:47] [I] accessToken 配置文件信息：&{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/22 08:26:29 [access_token_server.go:48] [I] 获取accessToken的配置==============end===================
+2016/08/22 08:26:29 [access_token_server.go:42] [I] 获取accessToken的配置 &{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/22 08:27:02 [access_token_server.go:40] [I] 获取accessToken的配置
+2016/08/22 08:27:02 [access_token_server.go:45] [I] 获取accessToken的配置==============start===================
+2016/08/22 08:27:02 [utils.go:49] [I] key is access_token_url||value is https://api.weixin.qq.com/cgi-bin/token
+2016/08/22 08:27:02 [utils.go:49] [I] key is appID||value is wx1dc762cdfeb4ed66
+2016/08/22 08:27:02 [utils.go:49] [I] key is appsecret||value is a72c8ccb896f3f7ddaf45f5318035bde
+2016/08/22 08:27:02 [utils.go:49] [I] key is grant_type||value is client_credential
+2016/08/22 08:27:02 [access_token_server.go:47] [I] accessToken 配置文件信息：&{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/22 08:27:02 [access_token_server.go:48] [I] 获取accessToken的配置==============end===================
+2016/08/22 08:27:02 [access_token_server.go:42] [I] 获取accessToken的配置 &{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/22 08:27:19 [access_token_server.go:40] [I] 获取accessToken的配置
+2016/08/22 08:27:19 [access_token_server.go:45] [I] 获取accessToken的配置==============start===================
+2016/08/22 08:27:19 [utils.go:49] [I] key is access_token_url||value is https://api.weixin.qq.com/cgi-bin/token
+2016/08/22 08:27:19 [utils.go:49] [I] key is appID||value is wx1dc762cdfeb4ed66
+2016/08/22 08:27:19 [utils.go:49] [I] key is appsecret||value is a72c8ccb896f3f7ddaf45f5318035bde
+2016/08/22 08:27:19 [utils.go:49] [I] key is grant_type||value is client_credential
+2016/08/22 08:27:19 [access_token_server.go:47] [I] accessToken 配置文件信息：&{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/22 08:27:19 [access_token_server.go:48] [I] 获取accessToken的配置==============end===================
+2016/08/22 08:27:19 [access_token_server.go:42] [I] 获取accessToken的配置 &{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/22 08:27:29 [access_token_server.go:40] [I] 获取accessToken的配置
+2016/08/22 08:27:29 [access_token_server.go:45] [I] 获取accessToken的配置==============start===================
+2016/08/22 08:27:29 [utils.go:49] [I] key is access_token_url||value is https://api.weixin.qq.com/cgi-bin/token
+2016/08/22 08:27:29 [utils.go:49] [I] key is appID||value is wx1dc762cdfeb4ed66
+2016/08/22 08:27:29 [utils.go:49] [I] key is appsecret||value is a72c8ccb896f3f7ddaf45f5318035bde
+2016/08/22 08:27:29 [utils.go:49] [I] key is grant_type||value is client_credential
+2016/08/22 08:27:29 [access_token_server.go:47] [I] accessToken 配置文件信息：&{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/22 08:27:29 [access_token_server.go:48] [I] 获取accessToken的配置==============end===================
+2016/08/22 08:27:29 [access_token_server.go:42] [I] 获取accessToken的配置 &{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/22 08:27:39 [access_token_server.go:40] [I] 获取accessToken的配置
+2016/08/22 08:27:39 [access_token_server.go:45] [I] 获取accessToken的配置==============start===================
+2016/08/22 08:27:39 [utils.go:49] [I] key is access_token_url||value is https://api.weixin.qq.com/cgi-bin/token
+2016/08/22 08:27:39 [utils.go:49] [I] key is appID||value is wx1dc762cdfeb4ed66
+2016/08/22 08:27:39 [utils.go:49] [I] key is appsecret||value is a72c8ccb896f3f7ddaf45f5318035bde
+2016/08/22 08:27:39 [utils.go:49] [I] key is grant_type||value is client_credential
+2016/08/22 08:27:39 [access_token_server.go:47] [I] accessToken 配置文件信息：&{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/22 08:27:39 [access_token_server.go:48] [I] 获取accessToken的配置==============end===================
+2016/08/22 08:27:39 [access_token_server.go:42] [I] 获取accessToken的配置 &{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/22 08:27:59 [access_token_server.go:40] [I] 获取accessToken的配置
+2016/08/22 08:27:59 [access_token_server.go:45] [I] 获取accessToken的配置==============start===================
+2016/08/22 08:27:59 [utils.go:49] [I] key is access_token_url||value is https://api.weixin.qq.com/cgi-bin/token
+2016/08/22 08:27:59 [utils.go:49] [I] key is appID||value is wx1dc762cdfeb4ed66
+2016/08/22 08:27:59 [utils.go:49] [I] key is appsecret||value is a72c8ccb896f3f7ddaf45f5318035bde
+2016/08/22 08:27:59 [utils.go:49] [I] key is grant_type||value is client_credential
+2016/08/22 08:27:59 [access_token_server.go:47] [I] accessToken 配置文件信息：&{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/22 08:27:59 [access_token_server.go:48] [I] 获取accessToken的配置==============end===================
+2016/08/22 08:27:59 [access_token_server.go:42] [I] 获取accessToken的配置 &{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/22 08:28:35 [access_token_server.go:40] [I] 获取accessToken的配置
+2016/08/22 08:28:35 [access_token_server.go:45] [I] 获取accessToken的配置==============start===================
+2016/08/22 08:28:35 [utils.go:49] [I] key is access_token_url||value is https://api.weixin.qq.com/cgi-bin/token
+2016/08/22 08:28:35 [utils.go:49] [I] key is appID||value is wx1dc762cdfeb4ed66
+2016/08/22 08:28:35 [utils.go:49] [I] key is appsecret||value is a72c8ccb896f3f7ddaf45f5318035bde
+2016/08/22 08:28:35 [utils.go:49] [I] key is grant_type||value is client_credential
+2016/08/22 08:28:35 [access_token_server.go:47] [I] accessToken 配置文件信息：&{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/22 08:28:35 [access_token_server.go:48] [I] 获取accessToken的配置==============end===================
+2016/08/22 08:28:35 [access_token_server.go:42] [I] 获取accessToken的配置 &{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/22 08:29:49 [access_token_server.go:40] [I] 获取accessToken的配置
+2016/08/22 08:29:49 [access_token_server.go:45] [I] 获取accessToken的配置==============start===================
+2016/08/22 08:29:49 [utils.go:49] [I] key is access_token_url||value is https://api.weixin.qq.com/cgi-bin/token
+2016/08/22 08:29:49 [utils.go:49] [I] key is appID||value is wx1dc762cdfeb4ed66
+2016/08/22 08:29:49 [utils.go:49] [I] key is appsecret||value is a72c8ccb896f3f7ddaf45f5318035bde
+2016/08/22 08:29:49 [utils.go:49] [I] key is grant_type||value is client_credential
+2016/08/22 08:29:49 [access_token_server.go:47] [I] accessToken 配置文件信息：&{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/22 08:29:49 [access_token_server.go:48] [I] 获取accessToken的配置==============end===================
+2016/08/22 08:29:49 [access_token_server.go:42] [I] 获取accessToken的配置 &{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/22 08:30:01 [access_token_server.go:40] [I] 获取accessToken的配置
+2016/08/22 08:30:01 [access_token_server.go:45] [I] 获取accessToken的配置==============start===================
+2016/08/22 08:30:01 [utils.go:49] [I] key is access_token_url||value is https://api.weixin.qq.com/cgi-bin/token
+2016/08/22 08:30:01 [utils.go:49] [I] key is appID||value is wx1dc762cdfeb4ed66
+2016/08/22 08:30:01 [utils.go:49] [I] key is appsecret||value is a72c8ccb896f3f7ddaf45f5318035bde
+2016/08/22 08:30:01 [utils.go:49] [I] key is grant_type||value is client_credential
+2016/08/22 08:30:01 [access_token_server.go:47] [I] accessToken 配置文件信息：&{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/22 08:30:01 [access_token_server.go:48] [I] 获取accessToken的配置==============end===================
+2016/08/22 08:30:01 [access_token_server.go:42] [I] 获取accessToken的配置 &{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/22 08:30:18 [access_token_server.go:40] [I] 获取accessToken的配置
+2016/08/22 08:30:18 [access_token_server.go:45] [I] 获取accessToken的配置==============start===================
+2016/08/22 08:30:18 [utils.go:49] [I] key is access_token_url||value is https://api.weixin.qq.com/cgi-bin/token
+2016/08/22 08:30:18 [utils.go:49] [I] key is appID||value is wx1dc762cdfeb4ed66
+2016/08/22 08:30:18 [utils.go:49] [I] key is appsecret||value is a72c8ccb896f3f7ddaf45f5318035bde
+2016/08/22 08:30:18 [utils.go:49] [I] key is grant_type||value is client_credential
+2016/08/22 08:30:18 [access_token_server.go:47] [I] accessToken 配置文件信息：&{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/22 08:30:18 [access_token_server.go:48] [I] 获取accessToken的配置==============end===================
+2016/08/22 08:30:18 [access_token_server.go:42] [I] 获取accessToken的配置 &{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/22 08:31:02 [access_token_server.go:40] [I] 获取accessToken的配置
+2016/08/22 08:31:02 [access_token_server.go:45] [I] 获取accessToken的配置==============start===================
+2016/08/22 08:31:02 [utils.go:49] [I] key is access_token_url||value is https://api.weixin.qq.com/cgi-bin/token
+2016/08/22 08:31:02 [utils.go:49] [I] key is appID||value is wx1dc762cdfeb4ed66
+2016/08/22 08:31:02 [utils.go:49] [I] key is appsecret||value is a72c8ccb896f3f7ddaf45f5318035bde
+2016/08/22 08:31:02 [utils.go:49] [I] key is grant_type||value is client_credential
+2016/08/22 08:31:02 [access_token_server.go:47] [I] accessToken 配置文件信息：&{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/22 08:31:02 [access_token_server.go:48] [I] 获取accessToken的配置==============end===================
+2016/08/22 08:31:02 [access_token_server.go:42] [I] 获取accessToken的配置 &{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/22 08:31:13 [access_token_server.go:40] [I] 获取accessToken的配置
+2016/08/22 08:31:13 [access_token_server.go:45] [I] 获取accessToken的配置==============start===================
+2016/08/22 08:31:13 [utils.go:49] [I] key is access_token_url||value is https://api.weixin.qq.com/cgi-bin/token
+2016/08/22 08:31:13 [utils.go:49] [I] key is appID||value is wx1dc762cdfeb4ed66
+2016/08/22 08:31:13 [utils.go:49] [I] key is appsecret||value is a72c8ccb896f3f7ddaf45f5318035bde
+2016/08/22 08:31:13 [utils.go:49] [I] key is grant_type||value is client_credential
+2016/08/22 08:31:13 [access_token_server.go:47] [I] accessToken 配置文件信息：&{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}
+2016/08/22 08:31:13 [access_token_server.go:48] [I] 获取accessToken的配置==============end===================
+2016/08/22 08:31:13 [access_token_server.go:42] [I] 获取accessToken的配置 &{url:https://api.weixin.qq.com/cgi-bin/token aPPID:wx1dc762cdfeb4ed66 appsecret:a72c8ccb896f3f7ddaf45f5318035bde grantType:client_credential accessTokenURL:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&&appid=wx1dc762cdfeb4ed66&secret=a72c8ccb896f3f7ddaf45f5318035bde}

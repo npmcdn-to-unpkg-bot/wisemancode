@@ -19,13 +19,15 @@ package button
 //		MediaID string `json:"media_id,omitempty"`
 //	} `json:"button"`
 //}
-
+//Button 微信菜单按钮的子集
 type Button struct {
 	Type      string    `json:"type"`
 	Name      string    `json:"name"`
 	Key       string    `json:"key"`
 	SubButton []*Button `json:"sub_button"`
 }
+
+//WXButton 微信菜单按钮
 type WXButton struct {
 	Button *Button `json:"button"`
 }

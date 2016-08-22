@@ -1,11 +1,13 @@
 package controllers
 
 import (
+	"fmt"
 
 	//"io/ioutil"
 
 	"wisemancode/log"
 	"wisemancode/utils"
+	"wisemancode/wechat/message"
 	"wisemancode/wechat/sync_access_token"
 
 	"github.com/astaxie/beego"
@@ -14,6 +16,14 @@ import (
 //创建微信认证服务
 type WXController struct {
 	beego.Controller
+}
+
+func (wxCon *WXController) Post() {
+	wxData := fmt.Sprintf("%s", wxCon.Ctx.Input.RequestBody)
+	log.Logger.Info("RequestBody:%s", wxData)
+	//s := fmt.Sprintf("%s", wxCon.Ctx.Input.CopyBody())
+	//log.Logger.Info("CopyBody:%s", s)
+	message.WXMessage(wxData)
 }
 
 //http://localhost:8088/wx?timestamp=timestamp&signature=signature&nonce=nonce&echostr=echostr
