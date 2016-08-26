@@ -1,0 +1,19 @@
+
+#对docker进行mysql操作
+
+docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag
+some-mysql:为启动容器取一个名称 
+my-secret-pw：为容器运行的mysql定制的root密码
+mysql:tag 启动的那个
+
+docker run --name some-app --link some-mysql:mysql -d application-that-uses-mysql
+docker run -it --rm mysql mysql -hsome.mysql.host -usome-mysql-user -p
+docker exec -it some-mysql bash
+docker logs some-mysql
+docker run --name some-mysql -v /my/custom:/etc/mysql/conf.d -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag
+docker run --name some-mysql -e MYSQL_ROOT _PASSWORD=my-secret-pw -d mysql:tag --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+docker run -it --rm mysql:tag --verbose --help
+docker run --name some-mysql -v /my/own/datadir:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag
+
+
+sudo docker run --name wxmysql -v /home/heys/mysql/data/:/var/lib/mysql -p 3306:3306  -e MYSQL_ROOT_PASSWORD=root -d mysql:latest --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci 
