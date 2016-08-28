@@ -57,6 +57,7 @@ func (wxCon *WXController) Get() {
 		return
 	}
 }
+
 func (wxCon *WXController) Test() {
 	log.Logger.Info("接受微信服务器参数：" + wxCon.Ctx.Request.URL.String())
 	log.Logger.Info("test 数据")

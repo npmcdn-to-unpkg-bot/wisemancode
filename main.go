@@ -4,6 +4,8 @@ import (
 	"wisemancode/log"
 	_ "wisemancode/routers"
 
+	"wisemancode/wechat/model"
+
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
 	_ "github.com/go-sql-driver/mysql"
@@ -13,7 +15,6 @@ import (
 func init() {
 	log.Logger.Info("初始化数据库=======start============")
 	orm.RegisterDriver("mysql", orm.DRMySQL)
-	//orm.RegisterDataBase("default", "mysql", "root:root@tcp(192.168.224.128:3306)/cloudta?charset=utf8")
 	orm.RegisterDataBase("default", "mysql", "root:root@tcp(127.0.0.1:3306)/wx?charset=utf8")
 	//开启开发模式
 	orm.Debug = true
@@ -22,6 +23,8 @@ func init() {
 }
 func main() {
 	//wechat.MainCallbacl()
+	u := model.NewSubscribeByAgrs("HEYIHSI", "heyishi", "event", "sub", 1)
+	u.AddSubscribe()
 	beego.Run()
 
 }

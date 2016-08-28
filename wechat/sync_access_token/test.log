@@ -29,3 +29,25 @@
 2016/08/18 11:06:41 [access_token_server.go:42][I] 获取accessToken的配置 &{url: aPPID: appsecret: grantType: accessTokenURL:?grant_type=&&appid=&secret=}
 2016/08/18 11:06:41 [access_token_server.go:87][I] accessToken 获取，数据结构初始化：&{CurrentAccessToken:0xc042164060 accessTokenResult:0xc0421640c0 LiveTime:0 Times:2h0m0s json:<nil>}
 2016/08/18 11:06:41 [access_token_server.go:88][I] accessToken 启动定时器，进行请求accessToken
+2016/08/28 18:24:21 [access_token_server.go:40] [I] 获取accessToken的配置
+2016/08/28 18:24:21 [access_token_server.go:45] [I] 获取accessToken的配置==============start===================
+2016/08/28 18:24:21 [utils.go:49] [I] key is access_token_url||value is 
+2016/08/28 18:24:21 [utils.go:49] [I] key is appID||value is 
+2016/08/28 18:24:21 [utils.go:49] [I] key is appsecret||value is 
+2016/08/28 18:24:21 [utils.go:49] [I] key is grant_type||value is 
+2016/08/28 18:24:21 [access_token_server.go:47] [I] accessToken 配置文件信息：&{url: aPPID: appsecret: grantType: accessTokenURL:?grant_type=&&appid=&secret=}
+2016/08/28 18:24:21 [access_token_server.go:48] [I] 获取accessToken的配置==============end===================
+2016/08/28 18:24:21 [access_token_server.go:42] [I] 获取accessToken的配置 &{url: aPPID: appsecret: grantType: accessTokenURL:?grant_type=&&appid=&secret=}
+2016/08/28 18:24:45 [access_token_server.go:87] [I] accessToken 获取，数据结构初始化：&{CurrentAccessToken:0xc42006ea20 accessTokenResult:0xc42006ea80 LiveTime:0 Times:2h0m0s json:<nil>}
+2016/08/28 18:24:45 [access_token_server.go:88] [I] accessToken 启动定时器，进行请求accessToken
+2016/08/28 18:24:59 [access_token_server.go:40] [I] 获取accessToken的配置
+2016/08/28 18:24:59 [access_token_server.go:45] [I] 获取accessToken的配置==============start===================
+2016/08/28 18:24:59 [utils.go:49] [I] key is access_token_url||value is 
+2016/08/28 18:24:59 [utils.go:49] [I] key is appID||value is 
+2016/08/28 18:24:59 [utils.go:49] [I] key is appsecret||value is 
+2016/08/28 18:24:59 [utils.go:49] [I] key is grant_type||value is 
+2016/08/28 18:24:59 [access_token_server.go:47] [I] accessToken 配置文件信息：&{url: aPPID: appsecret: grantType: accessTokenURL:?grant_type=&&appid=&secret=}
+2016/08/28 18:24:59 [access_token_server.go:48] [I] 获取accessToken的配置==============end===================
+2016/08/28 18:24:59 [access_token_server.go:42] [I] 获取accessToken的配置 &{url: aPPID: appsecret: grantType: accessTokenURL:?grant_type=&&appid=&secret=}
+2016/08/28 18:25:06 [access_token_server.go:87] [I] accessToken 获取，数据结构初始化：&{CurrentAccessToken:0xc42006e9c0 accessTokenResult:0xc42006ea20 LiveTime:0 Times:2h0m0s json:<nil>}
+2016/08/28 18:25:06 [access_token_server.go:88] [I] accessToken 启动定时器，进行请求accessToken

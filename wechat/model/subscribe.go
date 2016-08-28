@@ -37,7 +37,8 @@ func (subscribe *Subscribe) TableName() string {
 	return "subscribe"
 }
 func init() {
-	orm.RegisterModel(new(Subscribe))
+
+	orm.RegisterModel(&Subscribe{Header: &Head{}})
 }
 
 //AddSubscribe 添加事件

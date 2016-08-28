@@ -38,5 +38,6 @@ func NewHead() *Head {
 	h := new(Head)
 	h.ID = h.GetID()
 	h.CTime = h.CreateTime()
+	h.UpdateTime = h.CTime
 	return h
 }
