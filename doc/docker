@@ -17,3 +17,4 @@ docker run --name some-mysql -v /my/own/datadir:/var/lib/mysql -e MYSQL_ROOT_PAS
 
 
 sudo docker run --name wxmysql -v /home/heys/mysql/data/:/var/lib/mysql -p 3306:3306  -e MYSQL_ROOT_PASSWORD=root -d mysql:latest --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci 
+sudo docker run --name wx -v /home/heys/mysql/data/:/var/lib/mysql -p 3306:3306  -e MYSQL_ROOT_PASSWORD=root -d mysql:latest --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci 
